@@ -2,6 +2,16 @@
 
 - [一、基础知识篇](doc/1_basic.md)
   - [1.1 ctf 介绍](doc/1.1_ctf.md)
+  - [1.2 打造虚拟机](doc/1.2_vm.md)
+  - [1.3 Linux基础](doc/1.3_linux_basic.md)
+  - [1.4 Web 安全基础](doc/1.4_web_basic.md)
+  - [1.5 逆向工程基础](doc/1.5_reverse_basic.md)
+    - [1.5.1 C语言基础](doc/1.5.1_c_basic.md)
+    - [1.5.2 x86/x64/ARM 汇编基础](doc/1.5.2_x86&x64&ARM.md)
+    - [1.5.3 Linux ELF](doc/1.5.3_elf.md)
+    - [1.5.4 Windows PE](doc/1.5.4_pe.md)
+    - [1.5.5 静态链接](doc/1.5.5_static_link.md)
+    - [1.5.6 动态链接](doc/1.5.6_dynamic_link.md)
 
 - [二、工具篇](doc/2_tools.md)
   - [2.1 gdb/peda](doc/2.1gdb&peda.md)

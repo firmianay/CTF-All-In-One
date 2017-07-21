@@ -26,6 +26,7 @@
   - [2.6 pwntools](doc/2.7_pwntools.md)
   - [2.8 zio](doc/2.8_zio.md)
   - [2.9 metasploit](doc/2.9_metasploit.md)
+  - [2.10 binwalk](doc/2.10_binwalk.md)
 
 - [三、分类专题篇](doc/3_topics.md)
   - [3.1 Reverse](doc/3.1_reverse.md)

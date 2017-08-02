@@ -2,7 +2,7 @@
 
 - [一、基础知识篇](doc/1_basic.md)
   - [1.1 ctf 介绍](doc/1.1_ctf.md)
-  - [1.2]
+  - [1.2 提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
   - [1.3 Linux基础](doc/1.3_linux_basic.md)
   - [1.4 Web 安全基础](doc/1.4_web_basic.md)
   - [1.5 逆向工程基础](doc/1.5_reverse_basic.md)

@@ -37,6 +37,7 @@
   - [3.6 Mobile](doc/3.6_mobile.md)
 
 - [四、技巧篇](doc/4_tips.md)
+  - [4.1 AWD模式](doc/4.1_AWD.md)
 
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)

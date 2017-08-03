@@ -51,3 +51,7 @@
 合作和贡献
 ---
 请查看 [CONTRIBUTION.md](CONTRIBUTION.md)
+
+LICENSE
+---
+CC BY-SA 4.0

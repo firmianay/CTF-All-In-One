@@ -47,3 +47,7 @@
   - [6.2 更多 Windows 工具](doc/6.2_wintools.md)
   - [6.3 博客、文章和书籍](doc/6.3_books&blogs.md)
   - [6.4 习题 write-up](doc/6.4_writeup.md)
+
+合作和贡献
+---
+请查看 [CONTRIBUTION.md](CONTRIBUTION.md)

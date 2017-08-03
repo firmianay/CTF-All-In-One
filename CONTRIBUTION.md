@@ -5,10 +5,35 @@
 
 此书本着开源之精神，以分享他人提高自己为目的，将是一本大而全的 CTF 领域指南。因本人能力和时间有限，不可能精通竞赛中各个类别的知识，欢迎任何人提出建议或和我一起完成此书。
 
-注意：在开始编写某一个内容之前，请先在下面的表格里注明，以避免重复和冲突。如果是已经完成的章节，则可以直接进行修改。
+-- 开始于 2017.7.17
+
+### 规范
+该书目录结构大概为：
+```
+.
+├── CONTRIBUTION.md
+├── doc
+│   ├── 1.1_ctf.md
+├── pic
+│   ├── 1.3_byte_order.png
+├── README.md
+└── source
+    ├── Crypto
+    ├── Misc
+    ├── Pwn
+    ├── Reverse
+    │   ├── flag_pwnablekr
+    ├── Web
+    └── Others
+```
+- `README.md`：自述文件。
+- `CONTRIBUTION.md`：合作与贡献的相关内容。
+- `doc`：该文件夹包含书全部内容的 Markdown 文件。（文字）
+- `pic`：该文件夹包含所有 Markdown 中引用的所有图片文件。（图片）
+- `source`：该文件夹包含书中示例和练习的二进制文件或源代码，分专题保存。（代码）
+
+在开始编写某一个内容之前，请先在下面的表格里注明，以避免重复和冲突。如果是已经完成的章节，则可以直接进行修改。每个章节开头需要有一个目录，增加或删除内容时需要做相应的修改，关于 GitHub 独特的页面跳转写法请参考 [Page Jumping in Github](https://github.com/firmianay/Life-long-Learner/blob/master/misc/github-tips.md#page-jumping-in-github)。
 
 章节 | 作者 | 进度
 --- | --- | ---
 1.5.5_static_link | firmianay | 未完成
-
--- 开始于 2017.7.17

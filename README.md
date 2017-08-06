@@ -42,6 +42,7 @@
 
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)
+  - [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)
 
 - [六、附录](doc/6_appendix.md)
   - [6.1 更多 Linux 工具](doc/6.1_Linuxtools.md)

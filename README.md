@@ -43,12 +43,15 @@
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)
   - [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)
+  - [5.3 angr 二进制自动化分析](doc/5.3_angr.md)
 
 - [六、附录](doc/6_appendix.md)
   - [6.1 更多 Linux 工具](doc/6.1_Linuxtools.md)
   - [6.2 更多 Windows 工具](doc/6.2_wintools.md)
   - [6.3 博客、文章和书籍](doc/6.3_books&blogs.md)
   - [6.4 习题 write-up](doc/6.4_writeup.md)
+  - [6.5 Linux x86-64 系统调用表](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
+
 
 合作和贡献
 ---

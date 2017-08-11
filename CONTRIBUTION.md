@@ -11,25 +11,30 @@
 ##### 目录结构
 ```
 .
+.
 ├── CONTRIBUTION.md
 ├── doc
 │   ├── 1.1_ctf.md
+│   └── 6_appendix.md
 ├── LICENSE
 ├── pic
 │   ├── 1.3_byte_order.png
+│   └── 5.2_pin_arch.png
 ├── README.md
-└── src
-    ├── Crypto
-    ├── Misc
-    ├── Pwn
-    ├── Reverse
-    │   ├── flag_pwnablekr
-    ├── Web
-    └── Others
+├── src
+│   ├── Others
+│   │   ├── 1.5.7_stack.c
+│   │   └── 5.2_pin.c
+│   └── Reverse
+│       ├── 5.2_baleful
+│       └── xxd_crackme
+└── SUMMARY.md
 ```
+
 - `LICENSE`：贡献协议。
 - `README.md`：自述文件。
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
+- `SUMMARY.md`：gitbook 目录结构。
 - `doc`：该文件夹包含书全部内容的 Markdown 文件。（文字）
 - `pic`：该文件夹包含所有 Markdown 中引用的所有图片文件。（图片）
 - `src`：该文件夹包含书中示例和练习的二进制文件或源代码，分专题保存。（代码）

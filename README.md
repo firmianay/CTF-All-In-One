@@ -2,7 +2,7 @@
 
 - [一、基础知识篇](doc/1_basic.md)
   - [1.1 ctf 介绍](doc/1.1_ctf.md)
-  - [1.2 提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
+  - [1.2 提问的智慧](doc/1.2_smart_ask.md)
   - [1.3 Linux 基础](doc/1.3_linux_basic.md)
   - [1.4 Web 安全基础](doc/1.4_web_basic.md)
   - [1.5 逆向工程基础](doc/1.5_reverse_basic.md)
@@ -50,7 +50,7 @@
   - [6.2 更多 Windows 工具](doc/6.2_wintools.md)
   - [6.3 博客、文章和书籍](doc/6.3_books&blogs.md)
   - [6.4 习题 write-up](doc/6.4_writeup.md)
-  - [6.5 Linux x86-64 系统调用表](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
+  - [6.5 Linux x86-64 系统调用表](doc/6.5_syscall.md)
 
 
 合作和贡献

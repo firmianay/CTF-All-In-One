@@ -13,6 +13,7 @@
     - [1.5.5 静态链接](doc/1.5.5_static_link.md)
     - [1.5.6 动态链接](doc/1.5.6_dynamic_link.md)
     - [1.5.7 内存管理](doc/1.5.7_memory.md)
+    - [1.5.8 glibc malloc](doc/glibc_malloc.md)
   - [1.6 密码学基础](doc/1.6_crypto_basic.md)
   - [1.7 Android 安全基础](doc/1.7_android_basic.md)
 
@@ -39,6 +40,7 @@
 - [四、技巧篇](doc/4_tips.md)
   - [4.1 AWD模式](doc/4.1_AWD.md)
   - [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
+  - [4.3 GCC 安全编译参数](doc/4.3_gcc.md)
 
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)

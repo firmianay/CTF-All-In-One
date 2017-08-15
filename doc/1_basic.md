@@ -12,5 +12,6 @@
   - [1.5.5 静态链接](1.5.5_static_link.md)
   - [1.5.6 动态链接](1.5.6_dynamic_link.md)
   - [1.5.7 内存管理](1.5.7_memory.md)
+  - [1.5.8 glibc malloc](doc/glibc_malloc.md)
 - [1.6 密码学基础](1.6_crypto_basic.md)
 - [1.7 Android 安全基础](1.7_android_basic.md)

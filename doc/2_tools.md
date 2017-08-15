@@ -10,3 +10,4 @@
 - [2.8 zio](2.8_zio.md)
 - [2.9 metasploit](2.9_metasploit.md)
 - [2.10 binwalk](2.10_binwalk.md)
+- [2.11 Burp Suite](2.11_burpsuite.md)

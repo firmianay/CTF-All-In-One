@@ -45,6 +45,7 @@
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 
 
-章节 | 作者 | 进度
---- | --- | ---
-1.5.5_static_link | firmianay | 未完成
+| 章节                 | 作者        | 进度   |
+| ------------------ | --------- | ---- |
+| 1.5.5_static_link  | firmianay | 未完成  |
+| 1.6-Crypto/2.1-gdb | Skye      | 未完成  |

@@ -8,7 +8,7 @@
 -- 开始于 2017.7.17
 
 ### 规范
-##### 目录结构
+#### 目录结构
 ```
 .
 .
@@ -31,7 +31,7 @@
 └── SUMMARY.md
 ```
 
-- `LICENSE`：贡献协议。
+- `LICENSE`：开源协议。
 - `README.md`：自述文件。
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
 - `SUMMARY.md`：gitbook 目录结构。
@@ -39,7 +39,7 @@
 - `pic`：该文件夹包含所有 Markdown 中引用的所有图片文件。（图片）
 - `src`：该文件夹包含书中示例和练习的二进制文件或源代码，分专题保存。（代码）
 
-##### 注意事项
+#### 注意事项
 - 在开始编写某一个内容之前，请先在下面的表格里注明，以避免重复和冲突。如果是已经完成的章节，则可以直接进行修改。
 - 每个章节开头需要有一个目录，增加或删除内容时需要做相应的修改，关于 GitHub 独特的页面跳转写法请参考 [Page Jumping in Github](https://github.com/firmianay/Life-long-Learner/blob/master/misc/github-tips.md#page-jumping-in-github)。
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)

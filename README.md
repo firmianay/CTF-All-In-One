@@ -46,6 +46,7 @@
   - [4.1 AWD模式](doc/4.1_AWD.md)
   - [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
   - [4.3 GCC 堆栈保护技术](doc/4.3_gcc.md)
+  - [4.4 使用 DynELF 泄露函数地址](doc/4.4_dynelf.md)
 
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)

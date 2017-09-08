@@ -53,7 +53,7 @@
   - [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)
   - [5.3 angr 二进制自动化分析](doc/5.3_angr.md)
   - [5.4 反调试技术](doc/5.4_antidbg.md)
-  - [5.5 Symbolic Execution 符号执行技术](doc/5.5_symbolic.md)
+  - [5.5 符号执行](doc/5.5_symbolic.md)
   - [5.6 LLVM](doc/5.6_llvm.md)
 
 - [六、附录](doc/6_appendix.md)

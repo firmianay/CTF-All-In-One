@@ -5,3 +5,4 @@
 - [6.3 更多资源](6.3_books&blogs.md)
 - [6.4 习题 write-up](6.4_writeup.md)
 - [6.5 Linux x86-64 系统调用表](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
+- [6.6 PPT](6.6_ppt.md)

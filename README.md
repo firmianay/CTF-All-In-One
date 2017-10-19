@@ -1,8 +1,8 @@
 # CTF-All-In-One
 
 - [一、基础知识篇](doc/1_basic.md)
-  - [1.1 ctf 介绍](doc/1.1_ctf.md)
-  - [1.2 提问的智慧](doc/1.2_smart_ask.md)
+  - [1.1 CTF 简介](doc/1.1_ctf.md)
+  - [1.2 学习方法](doc/1.2_how_to_learn.md)
   - [1.3 Linux 基础](doc/1.3_linux_basic.md)
   - [1.4 Web 安全基础](doc/1.4_web_basic.md)
   - [1.5 逆向工程基础](doc/1.5_reverse_basic.md)

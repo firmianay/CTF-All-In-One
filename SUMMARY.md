@@ -52,6 +52,7 @@
     * [5.4 反调试技术](doc/5.4_antidbg.md)
     * [5.5 符号执行](doc/5.5_symbolic.md)
     * [5.6 LLVM](doc/5.6_llvm.md)
+    * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
 * [六、附录](doc/6_appendix.md)
     * [6.1 更多 Linux 工具](doc/6.1_Linuxtools.md)
     * [6.2 更多 Windows 工具](doc/6.2_wintools.md)

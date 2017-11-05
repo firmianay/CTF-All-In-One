@@ -5,6 +5,8 @@
 
 此书本着开源之精神，以分享他人提高自己为目的，将是一本大而全的 CTF 领域指南。因本人能力和时间有限，不可能精通竞赛中各个类别的知识，欢迎任何人提出建议或和我一起完成此书。
 
+**You think you understand something until you try to teach it.**
+
 -- 开始于 2017.7.17
 
 ### 规范

@@ -20,6 +20,7 @@
     - [1.7.2 Dalvik 指令集](doc/1.7.2_dalvik.md)
     - [1.7.3 ARM 汇编基础](doc/1.7.3_arm.md)
     - [1.7.4 Android 常用工具](doc/1.7.4_android_tools.md)
+
 - [二、工具篇](doc/2_tools.md)
   - [2.1 VM](doc/2.1_vm.md)
   - [2.2 gdb/peda](doc/2.2_gdb&peda.md)
@@ -63,13 +64,15 @@
   - [5.6 LLVM](doc/5.6_llvm.md)
   - [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
 
-- [六、附录](doc/6_appendix.md)
-  - [6.1 更多 Linux 工具](doc/6.1_Linuxtools.md)
-  - [6.2 更多 Windows 工具](doc/6.2_wintools.md)
-  - [6.3 更多资源](doc/6.3_books&blogs.md)
-  - [6.4 习题 write-up](doc/6.4_writeup.md)
-  - [6.5 Linux x86-64 系统调用表](doc/6.5_syscall.md)
-  - [6.6 PPT](doc/6.6_ppt.md)
+- [六、题解篇](doc/6_writeup.md)
+
+- [七、附录](doc/7_appendix.md)
+  - [7.1 更多 Linux 工具](doc/7.1_Linuxtools.md)
+  - [7.2 更多 Windows 工具](doc/7.2_wintools.md)
+  - [7.3 更多资源](doc/7.3_books&blogs.md)
+  - [7.4 习题 write-up](doc/7.4_writeup.md)
+  - [7.5 Linux x86-64 系统调用表](doc/7.5_syscall.md)
+  - [7.6 PPT](doc/7.6_ppt.md)
 
 
 合作和贡献

@@ -47,6 +47,7 @@
 - 每个章节开头需要有一个目录，增加或删除内容时需要做相应的修改，关于 GitHub 独特的页面跳转写法请参考 [Page Jumping in Github](https://github.com/firmianay/Life-long-Learner/blob/master/misc/github-tips.md#page-jumping-in-github)。
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 - 如果你新添加一个章节，需要在 **README.md**、**SUMMARY.md** 和章节所属部分相应的文件中添加条目。
+- 新增第六章题解篇，收集各种好题的Writeup，应力求详细，且能提供源程序供实际操作，一个md只写一题，源程序上传到文件夹`src/writeup`，题目最好来自 [CTFs](https://github.com/ctfs)。
 
 
 | 章节              | 作者        | 进度   |

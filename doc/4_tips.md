@@ -5,3 +5,5 @@
 - [4.3 GCC 堆栈保护技术](4.3_gcc.md)
 - [4.4 使用 DynELF 泄露函数地址](4.4_dynelf.md)
 - [4.5 Z3 约束求解器](4.5_z3.md)
+- [4.6 zio](4.6_zio.md)
+- [4.7 通用 gadget](4.7_normal_gadget.md)

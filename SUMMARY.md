@@ -52,7 +52,7 @@
     * [4.4 使用 DynELF 泄露函数地址](doc/4.4_dynelf.md)
     * [4.5 Z3 约束求解器](doc/4.5_z3.md)
     * [4.6 zio](doc/4.6_zio.md)
-    * [4.7 通用 gadget](doc/4.7_normal_gadget.md)
+    * [4.7 通用 gadget](doc/4.7_common_gadget.md)
 * [五、高级篇](doc/5_advanced.md)
     * [5.1 Fuzz 测试](doc/5.1_fuzz.md)
     * [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)

@@ -63,6 +63,7 @@
     * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
 * [六、题解篇](doc/6_writeup.md)
   * [6.1 pwn hctf2016 brop](doc/6.1_pwn_hctf2016_brop.md)
+  * [6.2 pwn 0ctf2015 freenote](doc/6.2_pwn_0ctf2015_freenote.md)
 * [七、附录](doc/7_appendix.md)
   * [7.1 更多 Linux 工具](doc/7.1_Linuxtools.md)
   * [7.2 更多 Windows 工具](doc/7.2_wintools.md)

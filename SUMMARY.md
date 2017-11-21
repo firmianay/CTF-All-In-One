@@ -68,6 +68,7 @@
   * [6.3 pwn xdctf2015 pwn200](doc/6.3_pwn_xdctf2015_pwn200.md)
   * [6.4 pwn njctf2017 233](doc/6.4_pwn_njctf2017_233.md)
   * [6.5 pwn 0ctf2015 freenote](doc/6.5_pwn_0ctf2015_freenote.md)
+  * [6.6 re xhpctf2017 dont_panic](doc/6.6_re_xhpctf2017_dont_panic.md)
 * [七、附录](doc/7_appendix.md)
   * [7.1 更多 Linux 工具](doc/7.1_Linuxtools.md)
   * [7.2 更多 Windows 工具](doc/7.2_wintools.md)

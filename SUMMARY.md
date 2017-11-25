@@ -62,6 +62,7 @@
     * [5.5 符号执行](doc/5.5_symbolic.md)
     * [5.6 LLVM](doc/5.6_llvm.md)
     * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
+    * [5.8 SAT/SMT](doc/5.8_sat-smt.md)
 * [六、题解篇](doc/6_writeup.md)
   * pwn
     * [6.1.1 pwn HCTF2016 brop](doc/6.1.1_pwn_hctf2016_brop.md)

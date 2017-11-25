@@ -7,3 +7,4 @@
 - [5.5 Symbolic Execution 符号执行技术](5.5_symbolic.md)
 - [5.6 LLVM](5.6_llvm.md)
 - [5.7 Capstone/Keystone](5.7_cap-keystone.md)
+- [5.8 SAT/SMT](5.8_sat-smt.md)

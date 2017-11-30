@@ -1,5 +1,8 @@
 # Summary
 
+GitHub 地址：https://github.com/firmianay/CTF-All-In-One
+
+
 * [简介](README.md)
 * [一、基础知识篇](doc/1_basic.md)
     * [1.1 CTF 简介](doc/1.1_ctf.md)
@@ -54,6 +57,7 @@
     * [4.6 zio](doc/4.6_zio.md)
     * [4.7 通用 gadget](doc/4.7_common_gadget.md)
     * [4.8 使用 DynELF 泄露函数地址](doc/4.8_dynelf.md)
+    * [4.9 给 ELF 文件打 patch](doc/4.9_patch_elf.md)
 * [五、高级篇](doc/5_advanced.md)
     * [5.1 Fuzz 测试](doc/5.1_fuzz.md)
     * [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)

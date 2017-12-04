@@ -82,6 +82,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
     * [6.2.3 re Codegate2017 angrybird](doc/6.2.3_re_codegate2017_angrybird.md)
+    * [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
 * [七、附录](doc/7_appendix.md)
   * [7.1 更多 Linux 工具](doc/7.1_Linuxtools.md)
   * [7.2 更多 Windows 工具](doc/7.2_wintools.md)

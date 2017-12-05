@@ -13,3 +13,4 @@
   - [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)
   - [6.2.3 re Codegate2017 angrybird](6.2.3_re_codegate2017_angrybird.md)
   - [6.2.4 re CSAWCTF2015 wyvern](6.2.4_re_csawctf2015_wyvern.md)
+  - [6.2.5 re PicoCTF2014 Baleful](6.2.5_re_picoctf2014_baleful.md)

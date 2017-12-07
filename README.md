@@ -86,13 +86,15 @@
     - [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     - [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
 
-- [七、附录](doc/7_appendix.md)
-  - [7.1 更多 Linux 工具](doc/7.1_Linuxtools.md)
-  - [7.2 更多 Windows 工具](doc/7.2_wintools.md)
-  - [7.3 更多资源](doc/7.3_books&blogs.md)
-  - [7.4 习题 write-up](doc/7.4_writeup.md)
-  - [7.5 Linux x86-64 系统调用表](doc/7.5_syscall.md)
-  - [7.6 幻灯片](doc/7.6_slides.md)
+- [七、实战篇](doc/7_exploit.md)
+
+- [八、附录](doc/8_appendix.md)
+  - [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)
+  - [8.2 更多 Windows 工具](doc/8.2_wintools.md)
+  - [8.3 更多资源](doc/8.3_books&blogs.md)
+  - [8.4 习题 write-up](doc/8.4_writeup.md)
+  - [8.5 Linux x86-64 系统调用表](doc/8.5_syscall.md)
+  - [8.6 幻灯片](doc/8.6_slides.md)
 
 
 合作和贡献

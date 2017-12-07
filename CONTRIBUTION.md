@@ -13,25 +13,26 @@
 #### 目录结构
 ```
 .
-.
 ├── CONTRIBUTION.md
 ├── doc
-│   ├── 1.1_ctf.md
-│   └── 6_appendix.md
+│   └── 1.1_ctf.md
 ├── LICENSE
 ├── pic
-│   ├── 1.3_byte_order.png
-│   └── 5.2_pin_arch.png
-├── ppt
-│   └── 01_fight-with-linux.pdf
+│   └── 1.3_byte_order.png
 ├── README.md
+├── slides
+│   └── 01_fight-with-linux.pdf
 ├── src
+│   ├── exploit
+│   │   └── init
 │   ├── Others
-│   │   ├── 1.5.7_stack.c
-│   │   └── 5.2_pin.c
-│   └── Reverse
-│       ├── 5.2_baleful
-│       └── xxd_crackme
+│   │   └── 1.5.7_brk.c
+│   ├── Pwn
+│   │   └── 3.3.1_goodlock_200
+│   ├── Reverse
+│   │   └── 2.2_serial_number_300
+│   └── writeup
+│       └── 6.1.1_pwn_hctf2016_brop
 └── SUMMARY.md
 ```
 
@@ -42,14 +43,15 @@
 - `doc`：该文件夹包含书全部内容的 Markdown 文件。（文字）
 - `pic`：该文件夹包含所有 Markdown 中引用的所有图片文件。（图片）
 - `src`：该文件夹包含书中示例和练习的二进制文件或源代码，分专题保存。（代码）
-- `ppt`：该文件夹包含以书为主要内容制作的 PPT。(分享)
+- `slides`：该文件夹包含以书为主要内容制作的幻灯片。(ppt)
 
 #### 注意事项
 - 在开始编写某一个内容之前，请先在下面的表格里注明，以避免重复和冲突。如果是已经完成的章节，则可以直接进行修改。
 - 每个章节开头需要有一个目录，增加或删除内容时需要做相应的修改，关于 GitHub 独特的页面跳转写法请参考 [Page Jumping in Github](https://github.com/firmianay/Life-long-Learner/blob/master/misc/github-tips.md#page-jumping-in-github)。
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 - 如果你新添加一个章节，需要在 **README.md**、**SUMMARY.md** 和章节所属部分相应的文件中添加条目。
-- 新增第六章题解篇，收集各种好题的Writeup，应力求详细，且能提供源程序供实际操作，一个md只写一题，源程序上传到文件夹`src/writeup`，题目最好来自 [CTFs](https://github.com/ctfs)。
+- 新增第六章题解篇，收集各种好题的Writeup，应力求详细，且能提供程序供实际操作，一个md只写一题，所有文件上传到文件夹`src/writeup`，题目最好来自 [CTFs](https://github.com/ctfs)。
+- 新增第七章实战篇，CTF之后，总是要回到现实中，对真实存在的漏洞进行分析利用，还是一样力求详细，并提供程序复现，一个md写一个漏洞，所有文件上传到`src/exploit`（程序太大的可附上网盘链接），参考 [exploit-db](https://www.exploit-db.com/)。
 
 
 | 章节              | 作者        | 进度   |

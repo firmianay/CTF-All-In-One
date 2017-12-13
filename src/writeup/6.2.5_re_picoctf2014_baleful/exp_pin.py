@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 
 def get_count(flag):
@@ -16,8 +17,8 @@ for i in range(30):
         flag[i] = c
         print("".join(flag))
         count = get_count("".join(flag))
-        print("count: ", count)
+        print(("count: ", count))
         if count != p_count:
             break
     p_count = count
-print("password: ", "".join(flag))
+print(("password: ", "".join(flag)))

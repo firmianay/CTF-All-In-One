@@ -1,3 +1,4 @@
+from __future__ import print_function
 from z3 import *
 
 solver = Solver()

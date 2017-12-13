@@ -9,6 +9,13 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [1.2 学习方法](doc/1.2_how_to_learn.md)
     * [1.3 Linux 基础](doc/1.3_linux_basic.md)
     * [1.4 Web 安全基础](doc/1.4_web_basic.md)
+        * [1.4.1 HTML基础]
+        * [1.4.2 HTTP协议基础]
+        * [1.4.3 JavaScript基础]
+        * [1.4.4 常见Web服务器基础]
+        * [1.4.5 OWASP Top Ten Project漏洞基础]
+        * [1.4.6 PHP源码审计基础]
+        * [1.4.7 Python编程-Web利用篇]
     * [1.5 逆向工程基础](doc/1.5_reverse_basic.md)
         * [1.5.1 C 语言基础](doc/1.5.1_c_basic.md)
         * [1.5.2 x86/x86-64 汇编基础](doc/1.5.2_x86&x64.md)

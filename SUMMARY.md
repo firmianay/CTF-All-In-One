@@ -93,8 +93,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     * [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
 * [七、实战篇](doc/7_exploit.md)
-  * Denial of Service and PoC Exploits
-    * [7.1.1 tcpdump 4.5.1 Access Violation Crash](doc/7.1.1_dos_tcpdump_crash.md)
+    * [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
 * [八、附录](doc/8_appendix.md)
   * [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)
   * [8.2 更多 Windows 工具](doc/8.2_wintools.md)

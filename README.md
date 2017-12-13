@@ -95,8 +95,7 @@
     - [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
 
 - [七、实战篇](doc/7_exploit.md)
-  - Denial of Service and PoC Exploits
-    - [7.1.1 tcpdump 4.5.1 Access Violation Crash](doc/7.1.1_dos_tcpdump_crash.md)
+  - [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
 
 - [八、附录](doc/8_appendix.md)
   - [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)

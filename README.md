@@ -1,7 +1,12 @@
 # CTF-All-In-One
 
-GitHub 地址：https://github.com/firmianay/CTF-All-In-One
+*——“与其相信谣言，不如一直学习。”*
 
+*GitHub 地址：https://github.com/firmianay/CTF-All-In-One*
+
+*GitBook 地址：https://www.gitbook.com/book/firmianay/ctf-all-in-one/details*
+
+---
 
 - [前言](doc/0_preface.md)
 

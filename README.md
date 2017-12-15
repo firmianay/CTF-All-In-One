@@ -1,4 +1,4 @@
-# CTF-All-In-One
+# CTF-All-In-One（CTF 从入门到放弃）
 
 *——“与其相信谣言，不如一直学习。”*
 
@@ -86,6 +86,8 @@
   - [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
   - [5.8 SAT/SMT](doc/5.8_sat-smt.md)
   - [5.9 反调试技术](doc/5.9_antidbg.md)
+  - [5.10 反编译技术](doc/5.10_decompiling.md)
+  - [5.11 RetDec 反编译器](doc/5.11_retdec.md)
 
 - [六、题解篇](doc/6_writeup.md)
   - pwn
@@ -105,7 +107,8 @@
     - [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
 
 - [七、实战篇](doc/7_exploit.md)
-  - [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
+  - CVE 分析
+    - [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
 
 - [八、附录](doc/8_appendix.md)
   - [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)

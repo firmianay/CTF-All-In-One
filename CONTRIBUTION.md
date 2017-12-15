@@ -14,6 +14,7 @@
 #### 目录结构
 ```
 .
+├── CHANGELOG
 ├── CONTRIBUTION.md
 ├── doc
 │   └── 1.1_ctf.md
@@ -41,8 +42,9 @@
 
 - `LICENSE`：开源协议。
 - `README.md`：自述文件。
+- `CHANGELOG`：变更日志。
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
-- `SUMMARY.md`：gitbook 目录结构。
+- `SUMMARY.md`：GitBook 目录结构。
 - `doc`：该目录包含书全部内容的 Markdown 文件。（文字）
 - `tex`：该目录包含使用 LaTex 重写的内容。（PDF）
 - `pic`：该目录包含所有 Markdown 中引用的所有图片文件。（图片）
@@ -53,7 +55,7 @@
 - 在开始编写某一个内容之前，请先在下面的表格里注明，以避免重复和冲突。如果是已经完成的章节，则可以直接进行修改。
 - 每个章节开头需要有一个目录，增加或删除内容时需要做相应的修改，GitHub 独特的页面跳转写法是：大写换小写，空格换“-”，然后删掉其他字符。
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
-- 可能用到的两个网站：[Graphviz](https://www.graphviz.org/)，[asciiflow](http://asciiflow.com/)。
+- 可能用到的几个网站：[Graphviz](https://www.graphviz.org/)，[asciiflow](http://asciiflow.com/)，[asciinema](https://asciinema.org/)。
 - 如果你新添加一个章节，需要在 **README.md**、**SUMMARY.md** 和章节所属部分相应的文件中添加条目。
 - 新增第六章题解篇，收集各种好题的 Writeup，应力求详细，且能提供程序供实际操作，一个 md 只写一题，所有文件上传到目录 `src/writeup`，题目最好来自 [CTFs](https://github.com/ctfs)。
 - 新增第七章实战篇，CTF 之后，总是要回到现实中，对真实存在的漏洞进行分析利用，还是一样力求详细，并提供程序复现，一个 md 写一个漏洞，所有文件上传到 `src/exploit`（程序太大的可附上网盘链接），参考 [exploit-db](https://www.exploit-db.com/)。

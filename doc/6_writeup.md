@@ -15,3 +15,4 @@
   - [6.2.3 re Codegate2017 angrybird](6.2.3_re_codegate2017_angrybird.md)
   - [6.2.4 re CSAWCTF2015 wyvern](6.2.4_re_csawctf2015_wyvern.md)
   - [6.2.5 re PicoCTF2014 Baleful](6.2.5_re_picoctf2014_baleful.md)
+  - [6.2.6 re SECCON2017 printf_machine](6.2.6_re_seccon2017_printf_machine.md)

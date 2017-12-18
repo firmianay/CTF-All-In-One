@@ -95,6 +95,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.2.3 re Codegate2017 angrybird](doc/6.2.3_re_codegate2017_angrybird.md)
     * [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     * [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
+    * [6.2.6 re SECCON2017 printf_machine](doc/6.2.6_re_seccon2017_printf_machine.md)
 * [七、实战篇](doc/7_exploit.md)
     * [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
 * [八、附录](doc/8_appendix.md)

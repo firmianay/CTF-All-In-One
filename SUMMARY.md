@@ -57,7 +57,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [3.5 Misc](doc/3.5_misc.md)
     * [3.6 Mobile](doc/3.6_mobile.md)
 * [四、技巧篇](doc/4_tips.md)
-    * [4.1 AWD模式](doc/4.1_AWD.md)
+    * [4.1]()
     * [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
     * [4.3 GCC 编译参数解析](doc/4.3_gcc_arg.md)
     * [4.4 GCC 堆栈保护技术](doc/4.4_gcc_sec.md)

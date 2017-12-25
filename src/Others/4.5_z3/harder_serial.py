@@ -2,6 +2,7 @@
 # Looks like the serial number verification for space ships is similar to that
 # of your robot. Try to find a serial that verifies for this space ship
 
+from __future__ import print_function
 import sys
 print ("Please enter a valid serial number from your RoboCorpIntergalactic purchase")
 if len(sys.argv) < 2:

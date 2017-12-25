@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 
 def get_count(flag):
@@ -12,10 +13,10 @@ p_count = get_count(flag)
 for i in range(50):
     flag += "A"
     count = get_count(flag)
-    print("count: ", count)
+    print(("count: ", count))
     diff = count - p_count
-    print("diff: ", diff)
+    print(("diff: ", diff))
     if diff != 794:
         break
     p_count = count
-print("length of password: ", len(flag))
+print(("length of password: ", len(flag)))

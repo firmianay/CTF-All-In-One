@@ -1,3 +1,4 @@
+from __future__ import print_function
 #HXP CTF 2017 - dont_panic 100 pts
 #Writeup link : https://rce4fun.blogspot.com/2017/11/hxp-ctf-2017-dontpanic-reversing-100.html
 #Souhail Hammou

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import angr
 
 main  = 0x004007da
@@ -12,4 +13,4 @@ ex = pg.explore(find=find, avoid=avoid)
 final = ex.found[0].state
 flag = final.posix.dumps(0)
 
-print "Flag:", final.posix.dumps(1)
+print("Flag:", final.posix.dumps(1))

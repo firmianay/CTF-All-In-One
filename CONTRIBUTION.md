@@ -23,6 +23,7 @@
 ├── CONTRIBUTION.md
 ├── doc
 │   └── 1.1_ctf.md
+├── FAQ.md
 ├── LICENSE
 ├── pic
 │   └── 1.3_byte_order.png
@@ -51,6 +52,7 @@
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
 - `SUMMARY.md`：GitBook 目录结构。
 - `.gitignore`：忽略特殊文件。
+- `FAQ.md`：常见问题解答。
 - `doc`：该目录包含书全部内容的 Markdown 文件。（文字）
 - `tex`：该目录包含使用 LaTex 重写的内容。（PDF）
 - `pic`：该目录包含所有 Markdown 中引用的所有图片文件。（图片）
@@ -67,7 +69,7 @@
 - 新增第七章实战篇，CTF 之后，总是要回到现实中，对真实存在的漏洞进行分析利用，还是一样力求详细，并提供程序复现，一个 md 写一个漏洞，所有文件上传到 `src/exploit`（程序太大的可附上网盘链接），参考 [exploit-db](https://www.exploit-db.com/)。
   - 考虑到真实漏洞的环境可能会很复杂，如果能做一个基于 docker 的环境，应该会很不错，这条就作为一个未来的计划。
 - 由于某人有强迫症，所以能用文本时绝不要截图:p，但有时候动图（gif）也是可以考虑的。
-- 看了下 GitBook 导出的 PDF，排版有点不忍直视，计划转战 LaTex，即提供 md 和 tex 两个版本，tex 版本放在目录 `tex/` 下。
+- 看了下 GitBook 导出的 PDF，排版有点不忍直视，计划转战 LaTex（XeLaTeX），即提供 md 和 tex 两个版本，tex 版本放在目录 `tex/` 下。
 
 
 | 章节 | 作者 | 进度 |

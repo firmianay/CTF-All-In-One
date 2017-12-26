@@ -9,9 +9,11 @@
   - [6.1.6 pwn DefconCTF2015 fuckup](6.1.6_pwn_defconctf2015_fuckup.md)
   - [6.1.7 pwn 0CTF2015 freenote](6.1.7_pwn_0ctf2015_freenote.md)
   - [6.1.8 pwn DCTF2017 Flex](6.1.8_pwn_dctf2017_flex.md)
+  - [6.1.9 pwn RHme3 Exploitation](6.1.9_rhme3_exploitation.md)
 - re
   - [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   - [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)
   - [6.2.3 re Codegate2017 angrybird](6.2.3_re_codegate2017_angrybird.md)
   - [6.2.4 re CSAWCTF2015 wyvern](6.2.4_re_csawctf2015_wyvern.md)
   - [6.2.5 re PicoCTF2014 Baleful](6.2.5_re_picoctf2014_baleful.md)
+  - [6.2.6 re SECCON2017 printf_machine](6.2.6_re_seccon2017_printf_machine.md)

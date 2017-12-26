@@ -1,4 +1,14 @@
-# CTF-All-In-One
+# CTF-All-In-One（CTF 从入门到放弃）
+
+*——“与其相信谣言，不如一直学习。”*
+
+*GitHub 地址：https://github.com/firmianay/CTF-All-In-One*
+
+*GitBook 地址：https://www.gitbook.com/book/firmianay/ctf-all-in-one/details*
+
+---
+
+- [前言](doc/0_preface.md)
 
 - [一、基础知识篇](doc/1_basic.md)
   - [1.1 CTF 简介](doc/1.1_ctf.md)
@@ -21,6 +31,13 @@
     - [1.5.7 内存管理](doc/1.5.7_memory.md)
     - [1.5.8 glibc malloc](doc/1.5.8_glibc_malloc.md)
   - [1.6 密码学基础](doc/1.6_crypto_basic.md)
+    - [1.6.1 初等数论](doc/1.6.1_number_theory.md)
+    - [1.6.2 近世代数](doc/1.6.2_modern_algebra.md)
+    - [1.6.3 流密码](doc/1.6.3_stream_cipher.md)
+    - [1.6.4 分组密码](doc/1.6.4_block_cipher.md)
+    - [1.6.5 公钥密码](doc/1.6.5_public-key_crypto.md)
+    - [1.6.6 哈希函数](doc/1.6.6_hash.md)
+    - [1.6.7 数字签名](doc/1.6.7_digital_signature.md)
   - [1.7 Android 安全基础](doc/1.7_android_basic.md)
     - [1.7.1 Android 环境搭建](doc/1.7.1_android_env.md)
     - [1.7.2 Dalvik 指令集](doc/1.7.2_dalvik.md)
@@ -44,6 +61,7 @@
 - [三、分类专题篇](doc/3_topics.md)
   - [3.1 Reverse](doc/3.1_reverse.md)
   - [3.2 Crypto](doc/3.2_crypto.md)
+    - [3.2.1 古典密码](doc/3.2.1_classic_crypto.md)
   - [3.3 Pwn](doc/3.3_pwn.md)
     - [3.3.1 格式化字符串漏洞](doc/3.3.1_format_string.md)
     - [3.3.2 整数溢出](doc/3.3.2_integer_overflow.md)
@@ -55,7 +73,7 @@
   - [3.6 Mobile](doc/3.6_mobile.md)
 
 - [四、技巧篇](doc/4_tips.md)
-  - [4.1 AWD模式](doc/4.1_AWD.md)
+  - [4.1]()
   - [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
   - [4.3 GCC 编译参数解析](doc/4.3_gcc_arg.md)
   - [4.4 GCC 堆栈保护技术](doc/4.4_gcc_sec.md)
@@ -76,6 +94,8 @@
   - [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
   - [5.8 SAT/SMT](doc/5.8_sat-smt.md)
   - [5.9 反调试技术](doc/5.9_antidbg.md)
+  - [5.10 反编译技术](doc/5.10_decompiling.md)
+  - [5.11 RetDec 反编译器](doc/5.11_retdec.md)
 
 - [六、题解篇](doc/6_writeup.md)
   - pwn
@@ -87,16 +107,18 @@
     - [6.1.6 pwn DefconCTF2015 fuckup](doc/6.1.6_pwn_defconctf2015_fuckup.md)
     - [6.1.7 pwn 0CTF2015 freenote](doc/6.1.7_pwn_0ctf2015_freenote.md)
     - [6.1.8 pwn DCTF2017 Flex](doc/6.1.8_pwn_dctf2017_flex.md)
+    - [6.1.9 pwn RHme3 Exploitation](doc/6.1.9_rhme3_exploitation.md)
   - re
     - [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     - [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
     - [6.2.3 re Codegate2017 angrybird](doc/6.2.3_re_codegate2017_angrybird.md)
     - [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     - [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
+    - [6.2.6 re SECCON2017 printf_machine](doc/6.2.6_re_seccon2017_printf_machine.md)
 
 - [七、实战篇](doc/7_exploit.md)
-  - Denial of Service and PoC Exploits
-    - [7.1.1 tcpdump 4.5.1 Access Violation Crash](doc/7.1.1_dos_tcpdump_crash.md)
+  - CVE 分析
+    - [7.1.1 [CVE-2017-11543] tcpdump 4.9.0 Buffer Overflow](doc/7.1.1_tcpdump_2017-11543.md)
 
 - [八、附录](doc/8_appendix.md)
   - [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)

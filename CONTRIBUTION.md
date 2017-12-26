@@ -18,6 +18,7 @@
 #### 目录结构
 ```
 .
+├── .gitignore
 ├── CHANGELOG
 ├── CONTRIBUTION.md
 ├── doc
@@ -49,6 +50,7 @@
 - `CHANGELOG`：变更日志。
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
 - `SUMMARY.md`：GitBook 目录结构。
+- `.gitignore`：忽略特殊文件。
 - `doc`：该目录包含书全部内容的 Markdown 文件。（文字）
 - `tex`：该目录包含使用 LaTex 重写的内容。（PDF）
 - `pic`：该目录包含所有 Markdown 中引用的所有图片文件。（图片）

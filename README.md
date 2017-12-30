@@ -73,7 +73,7 @@
   - [3.6 Mobile](doc/3.6_mobile.md)
 
 - [四、技巧篇](doc/4_tips.md)
-  - [4.1]()
+  - 4.1
   - [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
   - [4.3 GCC 编译参数解析](doc/4.3_gcc_arg.md)
   - [4.4 GCC 堆栈保护技术](doc/4.4_gcc_sec.md)
@@ -124,7 +124,7 @@
   - [8.1 更多 Linux 工具](doc/8.1_Linuxtools.md)
   - [8.2 更多 Windows 工具](doc/8.2_wintools.md)
   - [8.3 更多资源](doc/8.3_books&blogs.md)
-  - [8.4 习题 write-up](doc/8.4_writeup.md)
+  - 8.4
   - [8.5 Linux x86-64 系统调用表](doc/8.5_syscall.md)
   - [8.6 幻灯片](doc/8.6_slides.md)
 

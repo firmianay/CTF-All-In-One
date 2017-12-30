@@ -19,6 +19,7 @@
 ```
 .
 ├── .gitignore
+├── .travis.yml
 ├── CHANGELOG
 ├── CONTRIBUTION.md
 ├── doc
@@ -35,10 +36,6 @@
 │   │   └── init
 │   ├── Others
 │   │   └── 1.5.7_brk.c
-│   ├── Pwn
-│   │   └── 3.3.1_goodlock_200
-│   ├── Reverse
-│   │   └── 2.2_serial_number_300
 │   └── writeup
 │       └── 6.1.1_pwn_hctf2016_brop
 ├── SUMMARY.md
@@ -53,6 +50,7 @@
 - `CONTRIBUTION.md`：合作与贡献的相关内容。
 - `SUMMARY.md`：GitBook 目录结构。
 - `.gitignore`：忽略特殊文件。
+- `.travis.yml`：Travis CI 配置文件。
 - `FAQ.md`：常见问题解答。
 - `THANKS`：致谢名单。
 - `doc`：该目录包含书全部内容的 Markdown 文件。（文字）

@@ -1,5 +1,7 @@
 # CTF-All-In-One（CTF 从入门到放弃）
 
+[![Build Status](https://travis-ci.org/firmianay/CTF-All-In-One.svg?branch=master)](https://travis-ci.org/firmianay/CTF-All-In-One)
+
 *——“与其相信谣言，不如一直学习。”*
 
 *GitHub 地址：https://github.com/firmianay/CTF-All-In-One*

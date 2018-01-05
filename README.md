@@ -69,7 +69,7 @@
     - [3.3.2 整数溢出](doc/3.3.2_integer_overflow.md)
     - [3.3.3 栈溢出](doc/3.3.3_stack_overflow.md)
     - [3.3.4 返回导向编程（ROP）](doc/3.3.4_rop.md)
-    - [3.3.5 堆溢出](doc/3.3.5_heap_overflow.md)
+    - [3.3.5 堆利用](doc/3.3.5_heap_exploit.md)
   - [3.4 Web](doc/3.4_web.md)
   - [3.5 Misc](doc/3.5_misc.md)
   - [3.6 Mobile](doc/3.6_mobile.md)

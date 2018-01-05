@@ -10,6 +10,7 @@
   - [6.1.7 pwn 0CTF2015 freenote](6.1.7_pwn_0ctf2015_freenote.md)
   - [6.1.8 pwn DCTF2017 Flex](6.1.8_pwn_dctf2017_flex.md)
   - [6.1.9 pwn RHme3 Exploitation](6.1.9_rhme3_exploitation.md)
+  - [6.1.10 pwn 0CTF2017 BabyHeap2017](6.1.10_0ctf2017_babyheap2017.md)
 - re
   - [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   - [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

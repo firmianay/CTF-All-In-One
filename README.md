@@ -71,6 +71,8 @@
     - [3.3.4 返回导向编程（ROP）](doc/3.3.4_rop.md)
     - [3.3.5 堆利用](doc/3.3.5_heap_exploit.md)
   - [3.4 Web](doc/3.4_web.md)
+    - [3.4.1 SQL 注入利用](doc/3.4.1_sql_injection.md)
+    - [3.4.2 XSS 漏洞利用](doc/3.4.2_xss.md)
   - [3.5 Misc](doc/3.5_misc.md)
   - [3.6 Mobile](doc/3.6_mobile.md)
 
@@ -118,6 +120,8 @@
     - [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     - [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
     - [6.2.6 re SECCON2017 printf_machine](doc/6.2.6_re_seccon2017_printf_machine.md)
+  - web
+    - [6.3.1 web HCTF2017 babycrack](doc/6.3.1_web_hctf2017_babycrack.md)
 
 - [七、实战篇](doc/7_exploit.md)
   - CVE 分析

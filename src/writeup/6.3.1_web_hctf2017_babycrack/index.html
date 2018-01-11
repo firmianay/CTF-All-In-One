@@ -1,0 +1,49 @@
+<html>
+	<head> 
+		<title>Welcome to HCTF</title>
+		<style type="text/css">
+			@font-face {
+				font-family: "Proxima Nova";
+				src: url("fonts/ProximaNova.woff2");
+			}
+			@font-face {
+				font-family: "Proxima Nova";
+				src: url("fonts/ProximaNovaBold.woff2");
+				font-weight: bold;
+			}
+			* {
+				font-family: "Proxima Nova", sans-serif;
+			}
+			body {
+				background-color: #F0F0F0; 
+			}
+			#panel {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+				font-size: 1.25em;
+			}
+			#panel #message {
+				margin: 10px;
+				padding: 20px;
+				background-color: #FFF;
+				border-radius: 5px;
+				font-size: 1em;
+				border: 1px solid #000;
+				text-align: center;
+			}
+		</style>
+		<script src="=_=.js"></script>
+	</head>
+	<body>
+		<div id="panel">
+			<h2>H4v3 a g0od t1m3!:></h2>
+			<img src="leimu.jpg" style="height:65%; max-height:300px;" />
+			<form onsubmit="javascript:test();return false;" action="javascript:test();">
+				<input type="text" id="message" autocomplete="off" autofocus placeholder="hctf{xxxxxx}" />
+			</form>
+		</div>
+	</body>
+</html>

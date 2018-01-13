@@ -1,0 +1,88 @@
+%\ifthenelse{\equal{\CONFIGLanguage}{twoside}}
+%    {\input{base/headerfooter/twoside}}
+%    {\input{base/headerfooter/oneside}}
+    
+\pagestyle{fancy}
+
+\fancyhf{}
+
+% E for even page
+% O for odd page
+% L for left side
+% C for centered
+% R for right side
+
+% set header
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
+    {
+        \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[C]{}
+    }
+    {
+        \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[CE,CO]{}
+    }
+
+% change header line color
+\patchcmd{\headrule}{\hrule}{\color{LightGray}\hrule}{}{}
+% show header line
+\renewcommand{\headrulewidth}{0.4pt} % set to 0pt if line shall be removed
+%--------------------------------------
+
+
+% set footer
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
+    {
+        \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[L]{\DICTDocDate}
+        \fancyfoot[C]{}
+    }
+    {
+        \fancyfoot[RE,LO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[LE,RO]{\DICTDocDate}
+        \fancyfoot[CE,CO]{}
+    }
+
+% change footer line color
+\patchcmd{\footrule}{\hrule}{\color{LightGray}\hrule}{}{}
+% show footer line
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+%--------------------------------------
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    
+    % set header
+    %--------------------------------------
+    \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
+    {
+        \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[C]{}
+    }
+    {
+        \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[CE,CO]{}
+    }
+    %--------------------------------------
+    
+    
+    % set footer
+    %--------------------------------------
+    \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
+    {
+        \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[L]{\DICTDocDate}
+        \fancyfoot[C]{}
+    }
+    {
+        \fancyfoot[RE,LO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[LE,RO]{\DICTDocDate}
+        \fancyfoot[CE,CO]{}
+    }
+}

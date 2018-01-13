@@ -1,0 +1,18 @@
+\chapter{Use of Images}
+
+% Required packages: "graphicx", "float"
+% See for more info: https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics
+\section{Image Area}\index{Image Area}
+\subsection{Example Image 1}
+
+\includegraphics[trim = 10mm 60mm 20mm 5mm, clip, height=\linewidth, angle=90]{\IMGExampleOne}
+\captionof{figure}{Example Image 1}
+
+\subsection{Example Image 2}
+  
+\includegraphics[width=\linewidth]{\IMGExampleTwo}
+\captionof{figure}{Example Image 2}
+\label{figure:anime}
+
+You can reference images, for instance, the image \ref{figure:anime} shows 
+an image from \textit{unsplash}

@@ -1,0 +1,11 @@
+\setcounter{tocdepth}{3}
+
+% add table of contents entry
+\addstarredchapter{\DICTListOfTables}
+
+\renewcommand{\listtablename}{\DICTListOfTables}
+\renewcommand{\tablename}{\DICTTableName}
+\listoftables
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTListOfTables}{\DICTListOfTables}

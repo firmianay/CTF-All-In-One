@@ -1,0 +1,162 @@
+\usepackage{ifthen}
+
+% page dimensions
+%--------------------------------------
+% see https://de.sharelatex.com/learn/Page_size_and_margins
+\ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
+    {
+        \usepackage{geometry}\geometry{
+            a4paper, % a4 size 210x297 mm
+            left=35mm,
+            right=20mm,
+            top=35mm,
+            bottom=25mm,
+            footskip=10mm,
+            headheight=20mm % required for header
+        }
+    }
+    {
+        \usepackage{geometry}\geometry{
+            a4paper, % a4 size 210x297 mm
+            twoside,
+            left=35mm,
+            right=20mm,
+            top=35mm,
+            bottom=25mm,
+            footskip=10mm,
+            headheight=20mm % required for header
+        }
+    }
+%--------------------------------------
+
+% reduce chapter margin
+\renewcommand*{\chapterheadstartvskip}{\vspace*{0mm}}
+
+% Multi line comments
+%--------------------------------------
+\usepackage{verbatim}
+%--------------------------------------
+
+% font
+%--------------------------------------
+\usepackage{fontspec}
+\setmainfont[ExternalLocation=fonts/Roboto/,
+    BoldFont = Roboto-Bold.ttf,
+    ItalicFont = Roboto-Italic.ttf ,
+    BoldItalicFont = Roboto-BoldItalic.ttf]{Roboto-Regular.ttf}
+% language Japanese
+    %--------------------------------------
+    \usepackage{xeCJK}
+    \setCJKmainfont[ExternalLocation=fonts/NotoSansCJKSC/,
+        BoldFont = NotoSansCJKsc-Bold.otf]{NotoSansCJKsc-Regular.otf}
+    %--------------------------------------
+
+% set line height/spacing
+\renewcommand{\baselinestretch}{1.5}
+
+\ifthenelse{\equal{\CONFIGLanguage}{DE}}
+    {
+        % German hyphenation
+        \usepackage[ngerman]{babel}
+        \usepackage{csquotes}
+    }{}
+%--------------------------------------
+
+% Remove indentation
+%--------------------------------------
+\parindent0pt
+%-------------------------------------
+
+% Landscape
+%--------------------------------------
+\usepackage{pdflscape}
+%--------------------------------------
+
+% dictionary
+%--------------------------------------
+\input{dictionary/dictionary}
+%--------------------------------------
+
+% colors
+%--------------------------------------
+\usepackage[table]{xcolor}
+\input{config/colors}
+%--------------------------------------
+
+% images
+%--------------------------------------
+\usepackage{graphicx}
+% \input{config/images}
+%--------------------------------------
+
+% Tables
+%--------------------------------------
+\usepackage{longtable}
+% alternate rowcolors for all long-tables
+\let\oldlongtable\longtable
+\let\endoldlongtable\endlongtable
+%--------------------------------------
+
+% date
+%--------------------------------------
+\usepackage[yyyymmdd]{datetime}
+% format date
+\renewcommand{\dateseparator}{--}
+%--------------------------------------
+
+% Header & footer
+%--------------------------------------
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{etoolbox}
+%--------------------------------------
+
+% Enable linking e.g. for table of contents
+%--------------------------------------
+\usepackage{hyperref}
+\urlstyle{rm}
+%--------------------------------------
+
+% Listings - e.g. List of code snippets
+%--------------------------------------
+\usepackage{listings}
+% load style
+\input{config/lstdefinestyle}
+% init file variables
+%\input{config/snippets}
+%--------------------------------------
+
+% Abbreviations
+%--------------------------------------
+\usepackage[printonlyused]{acronym}
+%--------------------------------------
+
+% Bibliography/References 
+%--------------------------------------
+\usepackage[
+    backend=biber,
+    style=numeric,
+	sorting=ynt
+	% citestyle=chicago-authordate
+ ]{biblatex}
+% define reference resource
+\addbibresource{base/bibliography/references.bib}
+%--------------------------------------
+
+% Index
+%--------------------------------------
+\usepackage{imakeidx} 
+
+% uncomment to at numbering
+%\indexsetup{level=\chapter} 
+
+% Activate index commands
+\makeindex
+%--------------------------------------
+
+% Appendix
+%--------------------------------------
+\usepackage{appendix}
+\usepackage[german]{minitoc}
+\usepackage{titletoc}
+%--------------------------------------

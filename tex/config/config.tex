@@ -1,0 +1,33 @@
+% Define the used document language in ISO 639-1 code
+% see for more info https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+%--------------------------------------
+\def\CONFIGLanguage{ZH}
+%--------------------------------------
+
+\def\CONFIGEnableTitlePage{true} % true or false
+\def\CONFIGEnableDisclaimer{true} % true or false
+\def\CONFIGEnableCopyright{true} % true or false
+\def\CONFIGEnableTableOfContents{true} % true or false
+\def\CONFIGEnableListOfFigures{true} % true or false
+\def\CONFIGEnableListOfTables{true} % true or false
+\def\CONFIGEnableListOfSnippets{true} % true or false
+\def\CONFIGEnableListOfAbbreviations{true} % true or false
+\def\CONFIGEnableAppendix{true} % true or false
+\def\CONFIGEnableTableOfAppendix{true} % true or false
+\def\CONFIGEnableReferences{true} % true or false
+\def\CONFIGEnableIndex{true} % true or false
+
+% check if document is oneside or twoside
+% The type is set in main.tex in \documentclass[...]{...} -> line 2
+%--------------------------------------
+\makeatletter
+\if@twoside
+    \def\CONFIGOneTwoSided{twoside}
+\else
+    \def\CONFIGOneTwoSided{oneside}
+\fi
+\makeatother
+%--------------------------------------
+
+% Load basic packages for layout
+\input{config/layout}

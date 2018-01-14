@@ -71,6 +71,7 @@
     - [3.3.4 返回导向编程（ROP）](doc/3.3.4_rop.md)
     - [3.3.5 Linux 堆利用（上）](doc/3.3.5_heap_exploit_1.md)
     - [3.3.6 Linux 堆利用（中）](doc/3.3.6_heap_exploit_2.md)
+    - [3.3.7 Linux 堆利用（下）](doc/3.3.7_heap_exploit_3.md)
   - [3.4 Web](doc/3.4_web.md)
     - [3.4.1 SQL 注入利用](doc/3.4.1_sql_injection.md)
     - [3.4.2 XSS 漏洞利用](doc/3.4.2_xss.md)

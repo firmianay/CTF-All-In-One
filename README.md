@@ -92,6 +92,7 @@
 
 - [五、高级篇](doc/5_advanced.md)
   - [5.1 Fuzz 测试](doc/5.1_fuzz.md)
+    - [5.1.1 AFL fuzzer](doc/5.1.1_afl_fuzzer.md)
   - [5.2 Pin 动态二进制插桩](doc/5.2_pin.md)
   - [5.3 angr 二进制自动化分析](doc/5.3_angr.md)
   - [5.4 符号执行](doc/5.4_symbolic.md)

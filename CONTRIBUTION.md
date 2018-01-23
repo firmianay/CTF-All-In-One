@@ -77,5 +77,6 @@
 | --------------- | --------- | ---- |
 | 2.6_idapro.md | Sky3      | 未完成  |
 | 开始使用Latex  | Sky3      | 未完成  |
-| 2.12_burpsuite.md | phantom0301      | 未完成  |
-| 1.4.*.md | phantom0301      | 未完成  |
+| 1.4.6.md | phantom0301      | 未完成  |
+| 3.4.1.md | phantom0301      | 未完成  |
+| 3.4.2.md | phantom0301      | 未完成  |

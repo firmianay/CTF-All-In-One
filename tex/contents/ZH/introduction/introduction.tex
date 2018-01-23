@@ -1,57 +1,230 @@
-\chapter{前言}\index{前言}
+\usepackage{minted}
+\chapter{CTF 基础知识}\index{CTF 基础知识}
+\section{CTF 简介}
+% \setlength{\parindent}{2em}
+\subsection{概述}
+\indent \setlength{\parindent}{2em}
+\indent CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。CTF起源于1996年DEFCON全球黑客大会，以代替之前黑客们通过互相发起真实攻击进行技术比拼的方式。发展至今，已经成为全球范围网络安全圈流行的竞赛形式，2013年全球举办了超过五十场国际性CTF赛事。而DEFCON作为CTF赛制的发源地，DEFCON CTF也成为了目前全球最高技术水平和影响力的CTF竞赛，类似于CTF赛场中的“世界杯”。
 
-\begin{quote}
-    “与其相信谣言，不如一起学习”。
-\end{quote}
+\indent CTF 为团队赛，通常以三人为限，要想在比赛中取得胜利，就要求团队中每个人在各种类别的题目中至少精通一类，三人优势互补，取得团队的胜利。同时，准备和参与 CTF 比赛是一种有效将计算机科学的离散面、聚焦于计算机安全领域的方法。
 
-\section{常见问题}
+\subsection{赛事介绍}
+\indent \setlength{\parindent}{2em}
 
-\begin{itemize}\setlength{\parindent}{2em}
-    \item 什么是 CTF，我为什么要学？
-    
-    CTF 是网络安全技术人员之间进行技术竞技的一种比赛形式，通过学习，可以在法律允许的范围内，快速地了解和掌握相关安全技术。
+\indent CTF是一种流行的信息安全竞赛形式，其英文名可直译为“夺得Flag”，也可意译为“夺旗赛”。其大致流程是，参赛团队之间通过进行攻防对抗、程序分析等形式，率先从主办方给出的比赛环境中得到一串具有一定格式的字符串或其他内容，并将其提交给主办方，从而夺得分数。为了方便称呼，我们把这样的内容称之为“Flag”。
 
-    \item 阅读本书的预备知识是什么？
+\indent CTF竞赛模式具体分为以下三类：
+\begin{itemize}
+    \item \textbf{解题模式（Jeopardy）} 
+    \indent 在解题模式CTF赛制中，参赛队伍可以通过互联网或者现场网络参与，这种模式的CTF竞赛与ACM编程竞赛、信息学奥赛比较类似，以解决网络安全技术挑战题目的分值和时间来排名，通常用于在线选拔赛。题目主要包含逆向、漏洞挖掘与利用、Web渗透、密码、取证、隐写、安全编程等类别。
     
-    本书是为初学者准备的，不要求有预备知识，但如果对 Linux 操作系统，对编程有一定了解，肯定会有帮助。
-
-    \item 我可以买到纸质版吗？
+    \item \textbf{攻防模式（Attack-Defense）}
+    \indent 在攻防模式CTF赛制中，参赛队伍在网络空间互相进行攻击和防守，挖掘网络服务漏洞并攻击对手服务来得分，修补自身服务漏洞进行防御来避免丢分。攻防模式CTF赛制可以实时通过得分反映出比赛情况，最终也以得分直接分出胜负，是一种竞争激烈，具有很强观赏性和高度透明性的网络安全赛制。在这种赛制中，不仅仅是比参赛队员的智力和技术，也比体力（因为比赛一般都会持续48小时及以上），同时也比团队之间的分工配合与合作。
     
-    抱歉，目前没有。除非对纸质书有偏好，你可以自行打印。否则由于内容整体尚未完成，且更新很快，作者更推荐使用电子版。
-    
-    \item 本书有PDF/epub/mobi格式的吗？
-    
-    目前没有 epub/mobi 版本。暂时有 pdf，可在 GitBook 页面下载，这群人正在努力学习 \LaTeX\␣ 的使用，以提供更优雅的排版和PDF文件。
-    
-    \item 我能打印本书或者作为教材教课吗？
-    
-    太棒了！必须的！本书使用 Creative Commons license (CC BY-SA 4.0)，大可随意使用。作为一个开源项目，我们当然希望更多的人了解并参与进来。
-    
-    \item 本书为何免费，有何目的？
-    
-    技术类书籍大多赚不到钱，只是作者的兴趣使然，顺便给自己打个广告。让更多的人了解并推广，才是我们的目的所在，也是开源精神之所在。
-    
-    \item 我还有其他问题。
-    
-    你也可以选择提交issue到本仓库，也可以邮件联系我们。
-    
+    \item \textbf{混合模式（Mix）}
+    \indent 结合了解题模式与攻防模式的CTF赛制，比如参赛队伍通过解题可以获取一些初始分数，然后通过攻防对抗进行得分增减的零和游戏，最终以得分高低分出胜负。采用混合模式CTF赛制的典型代表如iCTF国际CTF竞赛。
 \end{itemize}
 
-\section{合作与贡献}
+
+\subsection{题目类别}
 \indent \setlength{\parindent}{2em}
 
-    \indent 随着信息安全的迅速发展，CTF 竞赛也在如火如荼的开展，有人说 “今天的 ACM 就是明天的 CTF” ，颇有几分道理。
-    \\目前市场上已经充斥着大量的 ACM 书籍，而 CTF 以其知识内容之分散、考察面之广泛、题目类型之多变，让许多新手不知所措，同时也加大了该方面书籍的编写难度。
+\begin{itemize}
+    \item Reverse
+    \begin{itemize}
+        \item 题目涉及到软件逆向、破解技术等，要求有较强的反汇编、反编译功底。主要考查参赛选手的逆向分析能力。
+        \item 所需知识：汇编语言、加密与解密、常见反汇编工具
+    \end{itemize}
+    
+    \item Pwn
+    \begin{itemize}
+        \item Pwn 在黑客俚语中代表着攻破，获取权限，在 CTF 比赛中它代表着溢出类的题目，其中常见类型溢出漏洞有整数溢出、栈溢出、堆溢出等。主要考查参赛选手对漏洞的利用能力。
+        \item 所需知识：C，OD+IDA，数据结构，操作系统
+    \end{itemize}
+    
+    \item Web
+    \begin{itemize}
+        \item Web 是 CTF 的主要题型，题目涉及到许多常见的 Web 漏洞，如 XSS、文件包含、代码执行、上传漏洞、SQL 注入等。也有一些简单的关于网络基础知识的考察，如返回包、TCP/IP、数据包内容和构造。有些题目环境比较接近真实环境，因此通过各种高质量Web题目可以迅速提高选手的安全技能。
+        \item 所需知识：基础的web开发能力，一门脚本语言（PHP、Python）、JavaScript、数据库、网络协议等
+    \end{itemize}
+   
+    \item Crypto
+    \begin{itemize}
+        \item 题目考察各种加解密技术，包括古典加密技术、现代加密技术甚至出题者自创加密技术，以及一些常见编码解码，主要考查参赛选手密码学相关知识点。通常也会和其他题目相结合。
+        \item 所需知识：数论、现代密码学和一门编程语言（C或Python）
+    \end{itemize}
+    
+    \item Misc
+    \begin{itemize}
+        \item Misc 即安全杂项，题目涉及隐写术、流量分析、电子取证、人肉搜索、数据分析、大数据统计等，覆盖面比较广，主要考查参赛选手的各种基础综合知识。
+        \item 所需知识：常见隐写术工具、Wireshark 等流量审查工具、编码知识；此类题目知识繁杂，有时候更需要一个灵活的思路
+    \end{itemize}
+    
+    \item Mobile(Android)
+    \begin{itemize}
+        \item 主要分为 Android 和 iOS 两个平台，以 Android 逆向为主，破解 APK 并提交正确答案。
+        \item 所需知识：Java，Android 开发，常见工具
+    \end{itemize}
+\end{itemize}
 
-    \indent 此书本着开源之精神，以分享他人提高自己为目的，将是一本大而全的 CTF 领域指南。因本人能力和时间有限，不可能精通各个类别的知识，欢迎任何人提出任何建议，和我一起完成此书。千万不要觉得自己是初学者就不敢提交 PR（issue），千万不要担心自己提交的 PR（issue） 会有问题，毕竟最后合并的人是我，背锅的也是我：）
-
-    \indent 如果你还有关于本书的其他想法，请直接给我发邮件 firmianay@gmail.com。
-
-\section{致谢}
+\subsection{高质量的CTF比赛}
 \indent \setlength{\parindent}{2em}
 
-\indent 感谢内容贡献者：skyel1u、phantom0301
+\indent 详见：
+\begin{itemize}
+    \item 国外比赛平台：\url{http://www.ctftime.org}
+    \item 国内CTF评分网站：\url{https://www.ctfrank.org}
+\end{itemize}
 
-\indent 感谢 XDSEC，把我引上了安全这条路，认识了很多志同道合的小伙伴。
 
-\indent 感谢 GitHub 上的朋友，是你们的 star 给我写作的动力。
+\subsection{竞赛小贴士}
+\indent \setlength{\parindent}{2em}
+\begin{itemize}
+    \item 寻找团队
+    \begin{itemize}
+        \item 彼此激励24小时以上的连续作战
+        \item 彼此分享交流技术与心得是最快的成长途径
+        \item 强有力的团队可以让你安心专注于某一领域
+        \item 在探索技术的道路上不会孤独
+    \end{itemize}
+    
+    \item 有效训练
+    \begin{itemize}
+        \item 坚持不懈地训练是成为强者的必经途径
+        \begin{itemize}
+            \item wargame
+            \item 经典赛题配合writeup加以总结
+            \item https://github.com/ctfs 以赛代练,总结与分享
+        \end{itemize}
+    \end{itemize}
+    \item wargame推荐
+    \begin{itemize}
+        \item 漏洞挖掘与利用(pwn)
+        \begin{itemize}
+            \item pwnable.kr
+            \item \href{https://exploit-exercises.com}{https://exploit-exercises.com}
+            \item \href{https://io.netgarage.org}{https://io.netgarage.org}
+        \end{itemize}
+        
+        \item 逆向工程与软件破解(re)
+        \begin{itemize}
+            \item reversing.kr
+            \item \href{http://crackmes.de}{http://crackmes.de}
+        \end{itemize}
+        
+        \item web渗透(web)
+        \begin{itemize}
+            \item webhacking.kr
+            \item \href{https://xss-game.appspot.com}{https://xss-game.appspot.com}
+        \end{itemize}
+        
+        \item 综合类
+        \begin{itemize}
+            \item \href{http://overthewire.org/wargames}{http://overthewire.org/wargames}
+            \item \href{https://w3challs.com}{https://w3challs.com}
+            \item \href{https://chall.stypr.com/?chall}{https://chall.stypr.com/?chall}
+            \item \href{https://pentesterlab.com}{https://pentesterlab.com}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{线下赛 AWD 模式概述}
+\indent \setlength{\parindent}{2em}
+
+\indent Attack With Defence，简而言之就是你既是一个 hacker，又是一个 manager。
+
+\indent 比赛形式：一般就是一个 ssh 对应一个服务，可能是 web 也可能是 pwn，然后 flag 五分钟一轮，各队一般都有自己的初始分数，flag 被拿会被拿走 flag 的队伍均分，主办方会对每个队伍的服务进行 check，check 不过就扣分，扣除的分值由服务 check 正常的队伍均分。
+
+\subsubsection{怎样拿到Flag}
+\indent \setlength{\parindent}{2em}
+\intent web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是通过 exploit 脚本读取 /home/username 下某个文件夹下的 flag 文件。
+
+\subsubsection{Web 题目类型}\setlength{\parindent}{2em}
+\begin{itemize}
+    \item 出题人自己写的 CMS 或者魔改后的 CMS(注意最新漏洞、1day漏洞等)
+    \item 常见(比如 Wordpress、Discuz!)或者不常见 CMS 等
+    \item 框架型漏洞(CI等)
+    \item \href{http://www.mamicode.com/info-detail-1590551.html}{如何在 CTF 中当搅屎棍}
+    \item \href{http://bobao.360.cn/ctf/detail/169.html}{AWD 模式生存技巧}
+    \item 能力：
+    \begin{itemize}
+        \item 漏洞反应能力
+        \item 快速编写脚本
+        \item web代码审计
+        \item 心态放好，因为 web 比较容易抓取流量，所以即使我们被打，我们也可以及时通过分析流量去查看别的队伍的 payload，从而进行反打。
+    \end{itemize}
+    \item 脚本准备：一句话，文件包含，不死马、禁止文件上传等
+    \item \textbf{警惕 web 弱口令，用最快的速度去补}
+\end{itemize}
+
+
+\subsubsection{Bin 题目类型}
+\indent \setlength{\parindent}{2em}
+\indent 大部分是 PWN，题目类型包括栈、堆、格式化字符串等等。
+
+\indent 能力：
+\begin{itemize}
+    \item 迅速找到二进制文件的漏洞，迅速打 patch 的能力
+    \item 全场打 pwn 的 exp 脚本编写
+    \item 熟悉服务器运维，如果二进制分析遇到障碍难以进行，那就去帮帮 web 选手运维
+    \item 尽快摸清楚比赛的 check 机制
+    \item 看看现场环境是否可以提权，这样可以方便我们搞操作（如魔改libc等等）
+\end{itemize}
+
+\subsubsection{技巧}
+\begin{itemize}
+    \item 如果自己拿到 FB， 先用 NPC 服务器或者自己服务器测试，格外小心自己的 payload 不要被别的队伍抓取到, 写打全场的 exp 时，一定要加入混淆流量。
+    \item 提前准备好 PHP 一句话木马等等脚本。
+    \item 小心其他队伍恶意攻击使我们队伍机器的服务不能正常运行，因此一定要备份服务器的配置。
+    \item 尽可能在不搞崩服务和绕过 check 的情况下，上 WAF，注意分析别人打过来的流量，如果没有混淆，可以大大加快我们的漏洞分析速度。
+    \item 工具准备: 中国菜刀、 Nmap、Xshell、 合适的扫描器等。
+    \item 如果自己丢分，心态不要崩。
+    \item 不要忽视 Github 等平台，可能会有写好的 exp 可以用。
+    \item 将 flag 的提交自动化。
+\end{itemize}
+
+
+
+\subsection{搭建CTF平台}
+\indent \setlength{\parindent}{2em}
+\indent 已经有现成开源平台供我们使用：
+\indent \begin{itemize}
+    \item \href{https://github.com/facebook/fbctf}{FBCTF} - The Facebook CTF is a platform to host Jeopardy and “King of the Hill” style Capture the Flag competitions.
+    
+    \item \href{https://github.com/CTFd/CTFd}{CTFd} - CTFd is a Capture The Flag in a can. It's easy to customize with plugins and themes and has everything you need to run a jeopardy style CTF.
+    
+    \item \href{https://github.com/cliffe/SecGen}{SecGen} - SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.
+\end{itemize}
+
+\subsection{参考}
+\indent \setlength{\parindent}{2em}
+
+\indent \href{https://baike.baidu.com/item/ctf/9548546}{https://baike.baidu.com/item/ctf/9548546}
+
+\section{学习方法}
+\indent \setlength{\parindent}{2em}
+\indent \href{https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way}{提问的智慧}
+
+\section{Linux基础}
+\indent \setlength{\parindent}{2em}
+
+\subsection{常用Linux命令}
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=Snippet title]
+ls                  # 用来显示目标列表
+cd [path]           # 用来切换工作目录
+pwd                 # 以绝对路径的方式显示用户当前工作目录
+man [command]       # 查看Linux中的指令帮助等信息
+\end{lstlisting}
+
+
+\section{Web安全基础}
+\indent \setlength{\parindent}{2em}
+
+\section{逆向工程基础}
+\indent \setlength{\parindent}{2em}
+
+\section{现代密码学基础}
+\indent \setlength{\parindent}{2em}
+
+\section{Android安全基础}
+\indent \setlength{\parindent}{2em}

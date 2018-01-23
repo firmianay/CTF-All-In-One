@@ -135,11 +135,40 @@
 \indent 比赛形式：一般就是一个 ssh 对应一个服务，可能是 web 也可能是 pwn，然后 flag 五分钟一轮，各队一般都有自己的初始分数，flag 被拿会被拿走 flag 的队伍均分，主办方会对每个队伍的服务进行 check，check 不过就扣分，扣除的分值由服务 check 正常的队伍均分。
 
 \subsubsection{怎样拿到Flag}
-web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是通过 exploit 脚本读取 /home/username 下某个文件夹下的 flag 文件。
+\indent \setlength{\parindent}{2em}
+\intent web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是通过 exploit 脚本读取 /home/username 下某个文件夹下的 flag 文件。
 
-\subsubsection{Web 题目类型}
+\subsubsection{Web 题目类型}\setlength{\parindent}{2em}
+\begin{itemize}
+    \item 出题人自己写的 CMS 或者魔改后的 CMS(注意最新漏洞、1day漏洞等)
+    \item 常见(比如 Wordpress、Discuz!)或者不常见 CMS 等
+    \item 框架型漏洞(CI等)
+    \item \href{http://www.mamicode.com/info-detail-1590551.html}{如何在 CTF 中当搅屎棍}
+    \item \href{http://bobao.360.cn/ctf/detail/169.html}{AWD 模式生存技巧}
+    \item 能力：
+    \begin{itemize}
+        \item 漏洞反应能力
+        \item 快速编写脚本
+        \item web代码审计
+        \item 心态放好，因为 web 比较容易抓取流量，所以即使我们被打，我们也可以及时通过分析流量去查看别的队伍的 payload，从而进行反打。
+    \end{itemize}
+    \item 脚本准备：一句话，文件包含，不死马、禁止文件上传等
+    \item \textbf{警惕 web 弱口令，用最快的速度去补}
+\end{itemize}
+
 
 \subsubsection{Bin 题目类型}
+\indent \setlength{\parindent}{2em}
+\indent 大部分是 PWN，题目类型包括栈、堆、格式化字符串等等。
+
+\indent 能力：
+\begin{itemize}
+    \item 迅速找到二进制文件的漏洞，迅速打 patch 的能力
+    \item 全场打 pwn 的 exp 脚本编写
+    \item 熟悉服务器运维，如果二进制分析遇到障碍难以进行，那就去帮帮 web 选手运维
+    \item 尽快摸清楚比赛的 check 机制
+    \item 看看现场环境是否可以提权，这样可以方便我们搞操作（如魔改libc等等）
+\end{itemize}
 
 \subsubsection{技巧}
 \begin{itemize}
@@ -169,4 +198,30 @@ web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是�
 \subsection{参考}
 \indent \setlength{\parindent}{2em}
 
-\indent \href{https://baike.baidu.com/item/ctf/9548546#viewPageContent}{https://baike.baidu.com/item/ctf/9548546#viewPageContent}
+\indent \href{https://baike.baidu.com/item/ctf/9548546}{https://baike.baidu.com/item/ctf/9548546}
+
+\section{学习方法}
+\indent \setlength{\parindent}{2em}
+\indent \href{https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way}{提问的智慧}
+
+\section{Linux基础}
+\indent \setlength{\parindent}{2em}
+
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=Snippet title]
+#!/bin/bash
+
+STRING="HELLO WORLD!!!"
+echo $STRING 
+\end{lstlisting}
+
+\section{Web安全基础}
+\indent \setlength{\parindent}{2em}
+
+\section{逆向工程基础}
+\indent \setlength{\parindent}{2em}
+
+\section{现代密码学基础}
+\indent \setlength{\parindent}{2em}
+
+\section{Android安全基础}
+\indent \setlength{\parindent}{2em}

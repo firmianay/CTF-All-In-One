@@ -1,0 +1,17 @@
+sudo: required
+dist: xenial
+before_install:
+- unalias cp
+- sudo apt-get update
+- sudo apt-get -y install texlive-full
+- sudo apt-get -y install fonts-roboto # install fonts
+- wget https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKsc-hinted.zip
+- unzip NotoSansCJKsc-hinted.zip
+- cp NotoSansCJKsc-Bold.otf ./CTF-All-In-One/tex/fonts/NotoSansCJKSC/NotoSansCJKsc-Bold.otf
+- cp NotoSansCJKsc-Regular.otf ./CTF-All-In-One/tex/fonts/NotoSansCJKSC/NotoSansCJKsc-Regular.otf
+- sudo fc-cache -fv
+- sudo rm -rf *.otf *.zip 
+
+script:
+- cd tex
+- xelatex -output-directory build ./main.tex

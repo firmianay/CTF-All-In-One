@@ -1,0 +1,175 @@
+% The main document in ShareLaTeX is the file which LATEX will be told to compile first. It is the main file of the project, which all other parts (classes, packages, chapters etc.) will be inputted into. By default in ShareLaTeX, the main document will be set to be the document in the project which begins with the \documentclass[...]{...} command.
+\documentclass[
+    a4paper, % a4 size 210x297 mm
+    12pt,
+    openany, % required to remove empty page after chapter
+    oneside % oneside or twoside
+]{scrbook}
+
+% initialize basic settings
+\input{config/config}
+
+% being document
+\begin{document}
+
+%required for appendix
+\dominitoc
+
+% adds only page number to page
+\pagestyle{plain}
+
+% change page numbering to arabic and start by page 1
+\pagenumbering{Roman}
+
+% Title page
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableTitlePage}{true}}
+{
+    \input{base/titlepage/titlepage}
+    \setcounter{page}{2}
+}{}
+%--------------------------------------
+
+% Second page with disclaimer and copyright
+%--------------------------------------
+% remove page number on this page
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \thispagestyle{empty}
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \thispagestyle{empty}
+    }{}
+}
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \input{base/disclaimer/disclaimer}
+}{}
+
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \vfill
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \phantom{}
+        \vfill
+    }{}
+}
+
+\ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+{
+    \input{base/copyright/copyright}
+}{}
+
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \newpage
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \newpage
+    }{}
+}
+%--------------------------------------
+
+% Table of contents
+%-------------------------------------
+\ifthenelse{\equal{\CONFIGEnableTableOfContents}{true}}
+{
+    %\pagestyle{empty}
+    \input{base/tableofcontents/tableofcontents}
+    \newpage
+}{}
+%--------------------------------------
+
+% List of Figures
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableListOfFigures}{true}}
+{
+    \input{base/listoffigures/listoffigures}
+    \newpage
+}{}
+%--------------------------------------
+
+% List of Tables
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableListOfTables}{true}}
+{
+    \input{base/listoftables/listoftables}
+    \newpage
+}{}
+%--------------------------------------
+
+% List of Listings
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableListOfSnippets}{true}}
+{
+    \input{base/lstlistoflistings/lstlistoflistings}  
+    \newpage
+}{}
+%--------------------------------------
+
+% List of Abbreviations
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableListOfAbbreviations}{true}}
+{
+    \input{base/abbreviations/abbreviations}  
+    \newpage
+}{}
+%--------------------------------------
+
+% change page numbering to arabic and start by page 1
+\pagenumbering{arabic}
+
+% Header & footer
+%--------------------------------------
+\input{base/headerfooter/headerfooter}  
+%--------------------------------------
+
+% Content
+%--------------------------------------
+\input{contents/contents}
+%--------------------------------------
+
+% Appendix
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableAppendix}{true}}
+{
+    \input{base/appendix/appendix}
+    
+    \ifthenelse{\equal{\CONFIGEnableReferences}{true}}
+    {
+        \newpage
+    }{
+        \ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+        {
+            \newpage
+        }{}
+    }
+}{}
+%--------------------------------------
+
+% References
+%-------------------------------------
+\ifthenelse{\equal{\CONFIGEnableReferences}{true}}
+{
+    \input{base/bibliography/bibliography}
+    
+    \ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+    {
+        \newpage
+    }{}
+}{}
+%--------------------------------------
+
+% Index
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+{
+    \input{base/index/index}
+}{}
+%--------------------------------------
+
+\end{document}

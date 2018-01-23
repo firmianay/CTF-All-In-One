@@ -1,0 +1,33 @@
+\RedeclareSectionCommand[tocnumwidth=6em]{section}
+\RedeclareSectionCommand[tocnumwidth=6.5em]{subsection}
+
+\RedeclareSectionCommand[tocindent=0em]{section}
+\RedeclareSectionCommand[tocindent=2em]{subsection}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTAppendix}{\DICTAppendix}
+
+\chapter*{\DICTAppendix}
+
+\nomtcrule
+\mtcsettitle{minitoc}{\DICTTableOfAppendix}
+\setcounter{section}{0}
+
+\addstarredchapter{\DICTAppendix}
+
+\ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
+{
+    \minitoc % minitoc-Ausgeben 
+    \newpage
+}{}
+
+\renewcommand{\thesection}{\DICTAppendix~\Alph{section}}
+
+% include appendix content
+%--------------------------------------
+\input{base/appendix/appendixcontent}
+%--------------------------------------
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

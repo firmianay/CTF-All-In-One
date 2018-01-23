@@ -1,0 +1,62 @@
+% You can find the documentation on ftp://ctan.tug.org/tex-archive/macros/latex/exptl/biblatex/doc/biblatex.pdf
+
+% Article
+%
+% An article in a journal, magazine, newspaper, or other periodical which forms a
+% self-contained unit with its own title. The title of the periodical is given in the
+% journaltitle field. If the issue has its own title in addition to the main title of
+% the periodical, it goes in the issuetitle field. Note that editor and related
+% fields refer to the journal while translator and related fields refer to the article.
+
+@article{exampleArticle,
+	% Required fields:
+	author	= "Max Mustermann",
+	title	= "Mustertitle - Article",
+	journaltitle	= "Muster Journal",
+	date	= "2017-12-13",
+	% Optional fields: see documentation
+}
+
+% Book
+% 
+% A single-volume book with one or more authors where the authors share credit for
+% the work as a whole. This entry type also covers the function of the @inbook type
+% of traditional BibTeX, see § 2.3.1 for details
+
+@book{exampleBook,
+	% Required fields:
+	author	= "Max Mustermann",
+	title	= "Mustertitle - Book",
+	date	= "2017-12-14",
+	% Optional fields: see documentation
+}
+
+% Manual
+%
+% Technical or other documentation, not necessarily in printed form. The author or
+% editor is omissible in terms of § 2.3.2.
+
+@manual{exampleManual,
+	% Required fields:
+	author	= "Max Mustermann",
+	title	= "Mustertitle - Manual",
+	date	= "2017-12-15",
+	% Optional fields: see documentation
+}
+
+% Online
+%
+% An online resource. author, editor, and year are omissible in terms of § 2.3.2.
+% This entry type is intended for sources such as web sites which are intrinsically
+% online resources. Note that all entry types support the url field. For example, when
+% adding an article from an online journal, it may be preferable to use the @article
+% type and its url field.
+
+@online{exampleOnline,
+	% Required fields:
+	author	= "Max Mustermann",
+	title	= "Mustertitle - Online",
+	date	= "2017-12-16",
+	url		= "http://example.url",
+	% Optional fields: see documentation
+}

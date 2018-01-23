@@ -1,0 +1,54 @@
+% add table of contents entry
+\addstarredchapter{\DICTAbbreviations}
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTAbbreviations}{\DICTAbbreviations}
+
+\chapter*{\DICTAbbreviations}
+
+% You can enter a short name between the abbreviation and the long form (for example, for I²C). This is necessary for mathematical characters, for example, since only normal characters may be used in the abbreviation. The corresponding call looks like usual: \ac{I2C}, the abbreviation I²C appears in the generated document.
+% After \begin{acronym} an expression can be specified in square brackets. After the length of this expression, the indentation of the abbreviations is set. In this case, it is recommended to use the longest abbreviation in order to obtain a uniform indentation for all abbreviations.
+
+\begin{acronym}[Bash]
+    \acro{KDE}{K Desktop Environment}
+    \acro{SQL}{Structured Query Language}
+    \acro{Bash}{Bourne-again shell}
+\end{acronym}
+
+% Use in the text
+% Here are only the most important examples:
+
+% Outputs the long form with the abbreviation in parentheses for the first use, from then on always the short form. 
+%--------------------------------------
+% \ac{KDE} % K Desktop Environment (KDE)
+%--------------------------------------
+
+% Returns the abbreviation.
+%--------------------------------------
+% \acs{KDE} % KDE
+%--------------------------------------
+
+% Outputs the long and short form.
+%--------------------------------------
+% \acf{KDE} % K Desktop Environment (KDE)
+%--------------------------------------
+
+% Only outputs the long form without the short form.
+%--------------------------------------
+% \acl{KDE} % K Desktop Environment
+%--------------------------------------
+
+% Similar to the above commands, the plural can also be displayed accordingly:
+%--------------------------------------
+% \acp{KDE} % K Desktop Environments (KDEs)
+% \acsp{KDE} % KDEs
+% \acfp{KDE} % K Desktop Environments (KDEs)
+% \aclp{KDE} % K Desktop Environments
+%--------------------------------------
+
+
+% If the plural does not end at -s, you can set it with the following command:
+%--------------------------------------
+% \acrodefplural{VM}[VMs]{Virtuelle Maschinen}
+%--------------------------------------
+

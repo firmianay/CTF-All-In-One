@@ -205,14 +205,142 @@
 \indent \href{https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way}{提问的智慧}
 
 \section{Linux基础}
+\setlength{\parindent}{2em}
+
+\subsection{常用Linux命令}
+\subsubsection{常用基础命令}
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=基础命令]
+ls                  # 用来显示目标列表
+cd [path]           # 用来切换工作目录
+pwd                 # 以绝对路径的方式显示用户当前工作目录
+man [command]       # 查看Linux中的指令帮助等信息
+echo [string]       # 打印一行文本，参数“-e”可激活转义字符
+cat [file]          # 连接文件并打印到标准输出设备上
+less [file]         # 允许用户向前或向后浏览文字档案的内容
+mv [file1] [file2]  # 对文件或目录重新命名，或者将文件从一个目录移到另一个目录
+cp [file1] [file2]  # 复制文件到指定的目的文件或目录
+rm [file]           # 可以删除一个目录中的一个或多个文件或目录
+ps                  # 用于报告当前系统的进程状态
+top                 # 实时查看系统的整体运行情况
+kill                # 杀死一个进程
+ifconfig            # 查看或设置网络设备
+ping                # 查看网络上的主机是否工作
+netstat             # 显示网络连接、路由表和网络接口信息
+nc(netcat)          # 建立 TCP 和 UDP 连接并监听
+su                  # 切换当前用户身份到其他用户身份
+touch [file]        # 创建新的空文件
+mkdir [dir]         # 创建目录
+chmod               # 变更文件或目录的权限
+chown               # 变更某个文件或目录的所有者和所属组
+nano / vim / emacs  # 字符终端的文本编辑器
+exit                # 退出 shell
+|                   # 将一个命令的标准输出作为另一个命令的标准输入
+\end{lstlisting}
+
+\subsubsection{Bash 快捷键}
+\indent \setlength{\parindent}{2em}
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=Bash快捷键]
+Up(Down)          # 上（下）一条指令
+Ctrl + c          # 终止当前进程
+Ctrl + z          # 挂起当前进程，使用“fg”可唤醒
+Ctrl + d          # 删除光标处的字符
+Ctrl + l          # 清屏
+Ctrl + a          # 移动到命令行首
+Ctrl + e          # 移动到命令行尾
+Ctrl + b          # 按单词后移（向左）
+Ctrl + f          # 按单词前移（向右）
+Ctrl + Shift + c  # 复制
+Ctrl + Shift + v  # 粘贴
+\end{lstlisting}
+\indent 更多细节请查看：\href{https://ss64.com/bash/syntax-keyboard.html}{bash keyboard shortcuts}
+
+\subsubsection{根目录结构}
 \indent \setlength{\parindent}{2em}
 
-\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=Snippet title]
-#!/bin/bash
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=目录结构]
+$ uname -a
+Linux manjaro 4.11.5-1-ARCH #1 SMP PREEMPT Wed Jun 14 16:19:27 CEST 2017 x86_64 GNU/Linux
 
-STRING="HELLO WORLD!!!"
-echo $STRING 
+$ ls -al /
+drwxr-xr-x  17 root root  4096 Jun 28 20:17 .
+drwxr-xr-x  17 root root  4096 Jun 28 20:17 ..
+lrwxrwxrwx   1 root root     7 Jun 21 22:44 bin -> usr/bin
+drwxr-xr-x   4 root root  4096 Aug 10 22:50 boot
+drwxr-xr-x  20 root root  3140 Aug 11 11:43 dev
+drwxr-xr-x 101 root root  4096 Aug 14 13:54 etc
+drwxr-xr-x   3 root root  4096 Apr  8 19:59 home
+lrwxrwxrwx   1 root root     7 Jun 21 22:44 lib -> usr/lib
+lrwxrwxrwx   1 root root     7 Jun 21 22:44 lib64 -> usr/lib
+drwx------   2 root root 16384 Apr  8 19:55 lost+found
+drwxr-xr-x   2 root root  4096 Oct  1  2015 mnt
+drwxr-xr-x  15 root root  4096 Jul 15 20:10 opt
+dr-xr-xr-x 267 root root     0 Aug  3 09:41 proc
+drwxr-x---   9 root root  4096 Jul 22 22:59 root
+drwxr-xr-x  26 root root   660 Aug 14 21:08 run
+lrwxrwxrwx   1 root root     7 Jun 21 22:44 sbin -> usr/bin
+drwxr-xr-x   4 root root  4096 May 28 22:07 srv
+dr-xr-xr-x  13 root root     0 Aug  3 09:41 sys
+drwxrwxrwt  36 root root  1060 Aug 14 21:27 tmp
+drwxr-xr-x  11 root root  4096 Aug 14 13:54 usr
+drwxr-xr-x  12 root root  4096 Jun 28 20:17 var
 \end{lstlisting}
+
+\indent 由于不同的发行版会有略微的不同，我们这里使用的是基于 Arch 的发行版 Manjaro，以上就是根目录下的内容，我们介绍几个重要的目录：
+\begin{itemize}
+    \item \verb+/bin+、\verb+/sbin+：链接到 \verb+/usr/bin+，存放 Linux 一些核心的二进制文件，其包含的命令可在 shell 上运行。
+    \item \verb+/boot+：操作系统启动时要用到的程序。
+    \item \verb+/dev+：包含了所有 Linux 系统中使用的外部设备。需要注意的是这里并不是存放外部设备的驱动程序，而是一个访问这些设备的端口。
+    \item \verb+/etc+：存放系统管理时要用到的各种配置文件和子目录。
+    \item \verb+/etc/rc.d+：存放 Linux 启动和关闭时要用到的脚本。
+    \item \verb+/home+：普通用户的主目录。
+    \item \verb+/lib+、\verb+/lib64+：链接到 \verb+/usr/lib+，存放系统及软件需要的动态链接共享库。
+    \item \verb+/mnt+：这个目录让用户可以临时挂载其他的文件系统。
+    \item \verb+/proc+：虚拟的目录，是系统内存的映射。可直接访问这个目录来获取系统信息。
+    \item \verb+/root+：系统管理员的主目录。
+    \item \verb+/srv+：存放一些服务启动之后需要提取的数据。
+    \item \verb+/sys+：该目录下安装了一个文件系统 sysfs。该文件系统是内核设备树的一个直观反映。当一个内核对象被创建时，对应的文件和目录也在内核对象子系统中被创建。
+    \item \verb+/tmp+：公用的临时文件存放目录。
+    \item \verb+/usr+：应用程序和文件几乎都在这个目录下。
+    \item \verb+/usr/src+：内核源代码的存放目录。
+    \item \verb+/var+：存放了很多服务的日志信息。
+\end{itemize}
+
+\subsubsection{进程管理}
+\indent \setlength{\parindent}{2em}
+\begin{itemize}
+    \item \verb+top+ 可以实时动态地查看系统的整体运行情况。
+    \item \verb+ps+ 用于报告当前系统的进程状态。可以搭配 \verb+kill+ 指令随时中断、删除不必要的程序。
+    \item 查看某进程的状态：\verb+$ ps -aux | grep [file]+，其中返回内容最左边的数字为进程号（PID）。
+    \item \verb+kill+用来删除执行中的程序或工作。
+    \item 删除进程某 PID 指定的进程：\verb+$ kill [PID]+
+\end{itemize}
+
+\subsubsection{UID 和 GID}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{权限设置}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{字节序}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{输入输出}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{文件描述符}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{核心转储}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{调用约定}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{环境变量}
+\indent \setlength{\parindent}{2em}
+
+\subsubsection{/proc/[pid]}
+\indent \setlength{\parindent}{2em}
 
 \section{Web安全基础}
 \indent \setlength{\parindent}{2em}

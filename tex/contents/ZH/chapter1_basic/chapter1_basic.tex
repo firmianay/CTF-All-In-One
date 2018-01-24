@@ -136,7 +136,7 @@
 
 \subsubsection{怎样拿到Flag}
 \indent \setlength{\parindent}{2em}
-\intent web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是通过 exploit 脚本读取 /home/username 下某个文件夹下的 flag 文件。
+\intent web 主要是向目标服务器发送 http 请求，返回 flag，bin 主要是通过 exploit 脚本读取 \verb+/home/username+ 下某个文件夹下的 \verb+flag+ 文件。
 
 \subsubsection{Web 题目类型}\setlength{\parindent}{2em}
 \begin{itemize}
@@ -317,6 +317,44 @@ drwxr-xr-x  12 root root  4096 Jun 28 20:17 var
 
 \subsubsection{UID 和 GID}
 \indent \setlength{\parindent}{2em}
+\indent Linux 是一个支持多用户的操作系统，每个用户都有 User ID(UID) 和 Group ID(GID)，UID 是对一个用户的单一身份标识，而 GID 则对应多个 UID。知道某个用户的 UID 和 GID 是非常有用的，一些程序可能就需要 UID/GID 来运行。可以使用 id 命令来查看：
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=查看uid]
+$ id root
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),19(log)
+
+$ id firmy
+uid=1000(firmy) gid=1000(firmy) groups=1000(firmy),3(sys),7(lp),10(wheel),90(network),91(video),93(optical),95(storage),96(scanner),98(power),56(bumblebee)
+\end{lstlisting}
+
+\indent UID 为 0 的\verb+root+ 用户类似于系统管理员，它具有系统的完全访问权。我自己新建的用户 \verb+firmy+，其 UID 为 1000，是一个普通用户。GID 的关系存储在 \verb+/etc/group+ 文件中：
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=查看gid]
+$ cat /etc/group
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,firmy
+......
+\end{lstlisting}
+
+\indent 所有用户的信息（除了密码）都保存在 \verb+/etc/passwd+ 文件中，而为了安全起见，加密过的用户密码保存在 \verb+/etc/shadow+ 文件中，此文件只有\verb+root+权限可以访问。
+
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=查看shadow+文件]
+$ sudo cat /etc/shadow
+root:$6$root$wvK.pRXFEH80GYkpiu1tEWYMOueo4tZtq7mYnldiyJBZDMe.mKwt.WIJnehb4bhZchL/93Oe1ok9UwxYf79yR1:17264::::::
+firmy:$6$firmy$dhGT.WP91lnpG5/10GfGdj5L1fFVSoYlxwYHQn.llc5eKOvr7J8nqqGdVFKykMUSDNxix5Vh8zbXIapt0oPd8.:17264:0:99999:7:::
+
+\end{lstlisting}
+
+\indent 由于普通用户的权限比较低，这里使用\verb+sudo+ 命令可以让普通用户以 root 用户的身份运行某一命令。使用\verb+su+ 命令则可以切换到一个不同的用户：
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=切换用户]
+$ whoami
+firmy
+$ su root
+# whoami
+root
+\end{lstlisting}
+
+\indent \verb+whoami+用于打印当前有效的用户名称，shell 中普通用户以\verb+$+开头，\verb+root+ 用户以\verb+#+开头。在输入密码后，我们已经从\verb+firmy+用户转换到 \verb+root+用户了。
 
 \subsubsection{权限设置}
 \indent \setlength{\parindent}{2em}

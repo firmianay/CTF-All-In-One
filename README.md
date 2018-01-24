@@ -8,9 +8,9 @@
 
 *GitBook 地址：https://www.gitbook.com/book/firmianay/ctf-all-in-one/details*
 
----
+<!-- --- -->
 
-- [前言](doc/0_preface.md)
+<!-- - [前言](doc/0_preface.md)
 
 - [一、基础知识篇](doc/1_basic.md)
   - [1.1 CTF 简介](doc/1.1_ctf.md)
@@ -137,13 +137,15 @@
   - [8.3 更多资源](doc/8.3_books&blogs.md)
   - 8.4
   - [8.5 Linux x86-64 系统调用表](doc/8.5_syscall.md)
-  - [8.6 幻灯片](doc/8.6_slides.md)
+  - [8.6 幻灯片](doc/8.6_slides.md) -->
+## 目录
+---
+请查看 [SUMMARY.md](SUMMARY.md)
 
-
-合作和贡献
+## 合作和贡献
 ---
 请查看 [CONTRIBUTION.md](CONTRIBUTION.md)
 
-LICENSE
+## LICENSE
 ---
 CC BY-SA 4.0

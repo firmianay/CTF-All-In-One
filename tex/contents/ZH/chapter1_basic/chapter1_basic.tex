@@ -379,7 +379,6 @@ drwxr-xr-x   4 root root  4096 Jul 28 08:48 boot
 
 \indent 通过第一栏的第一个字母可知，第一行是一个链接文件 （\verb+l+），第二行是个目录（\verb+d+），第三行是个普通文件（\verb+-+）。
 \indent 用户可以使用\verb+chmod+ 指令去变更文件与目录的权限。权限范围被指定为所有者（\verb+u+）、所属组（\verb+g+）、其他人（\verb+o+）和所有人（\verb+a+）。
-
 \begin{itemize}
     \item \verb+-R+：递归处理，将指令目录下的所有文件及子目录一并处理；
     \item <权限范围>+<权限设置>：开启权限范围的文件或目录的该选项权限设置
@@ -390,20 +389,86 @@ drwxr-xr-x   4 root root  4096 Jul 28 08:48 boot
     \item \verb+$ chmod g=x [file]+：指定组权限为可执行
     \item \verb+$ chmod o=rwx [file]+：制定其他人权限为可读、可写和可执行
 \end{itemize}
+\indent     \\
 \indent 
-\begin{figure}
-\includegraphics[]{images/content/1.3_file.png}
+\begin{figure}[ht]
+\includegraphics[width=0.6in]{images/content/1.3_file.png}
 \captionof{figure}{文件描述符}
+\label{fig:文件描述符}
 \end{figure}
 
 \subsubsection{字节序}
 \indent \setlength{\parindent}{2em}
 
+\indent 目前计算机中采用两种字节存储机制：大端（Big-endian）和小端（Little-endian）。
+
+\indent Big-endian 规定 MSB 在存储时放在低地址，在传输时放在流的开始；LSB 存储时放在高地址，在传输时放在流的末尾。Little-endian 则相反。
+
+\indent 常见的 Intel 处理器使用 Little-endian，而 PowerPC 系列处理器则使用 Big-endian，另外 TCP/IP 协议和 Java 虚拟机的字节序也是 Big-endian。
+
+\indent 例如十六进制整数 \verb+0x12345678+ 存入以 \verb+1000H+ 开始的内存中：
+\indent \ \\
+\indent \ \\
+\indent \ \\
+\indent \ \\
+\indent \ \\
+\indent \ \\
+\indent \ \\
+\begin{figure}[ht]
+    \indent \\
+    \includegraphics[width=0.8in]{images/content/1.3_byte_order.png}
+    \captionof{figure}{字节序}
+    \label{fig:字节序}
+\end{figure}
+\indent \\
+\indent 我们在内存中实际地看一下，在地址 \verb+0xffffd584+ 处有字符 \verb+1234+，在地址 \verb+0xffffd588+处有字符 \verb+5678+。
+\begin{lstlisting}[language=bash, style=customStyleBashDark, caption=内存中的字节]
+gdb-peda$ x/w 0xffffd584
+0xffffd584:     0x34333231
+gdb-peda$ x/4wb 0xffffd584
+0xffffd584:     0x31    0x32    0x33    0x34
+gdb-peda$ python print('\x31\x32\x33\x34')
+1234
+
+gdb-peda$ x/w 0xffffd588
+0xffffd588:     0x38373635
+gdb-peda$ x/4wb 0xffffd588
+0xffffd588:     0x35    0x36    0x37    0x38
+gdb-peda$ python print('\x35\x36\x37\x38')
+5678
+
+gdb-peda$ x/2w 0xffffd584
+0xffffd584:     0x34333231      0x38373635
+gdb-peda$ x/8wb 0xffffd584
+0xffffd584:     0x31    0x32    0x33    0x34    0x35    0x36    0x37    0x38
+gdb-peda$ python print('\x31\x32\x33\x34\x35\x35\x36\x37\x38')
+123455678
+db-peda$ x/s 0xffffd584
+0xffffd584:     "12345678"
+\end{lstlisting}
+
 \subsubsection{输入输出}
 \indent \setlength{\parindent}{2em}
+\begin{itemize}
+    \item 使用命令的输出作为可执行文件的输入参数
+    \item \verb|$ ./vulnerable 'your_command_here'|
+    \item \verb|$ ./vulnerable $(your_command_here)|
+    \item 使用命令作为输入
+    \item \verb+$ your_command_here | ./vulnerable+
+    \item 将命令行输出写入文件
+    \item \verb+$ your_command_here > filename+
+    \item 使用文件作为输入
+    \item \verb+$ ./vulnerable < filename+
+\end{itemize}
 
 \subsubsection{文件描述符}
 \indent \setlength{\parindent}{2em}
+
+\indent 在 Linux 系统中一切皆可以看成是文件，文件又分为：普通文件、目录文件、链接文件和设备文件。文件描述符（file descriptor）是内核管理已被打开的文件所创建的索引，使用一个非负整数来指代被打开的文件。
+
+\indent 标准文件描述符如下：
+
+\indent 当一个程序使用 \verb+fork()+ 生成一个子进程后，子进程会继承父进程所打开的文件表，此时，父子进程使用同一个文件表，这可能导致一些安全问题。如果使用 \verb+vfork()+，子进程虽然运行于父进程的空间，但拥有自己的进程表项。
 
 \subsubsection{核心转储}
 \indent \setlength{\parindent}{2em}

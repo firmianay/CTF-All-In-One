@@ -8,6 +8,7 @@
 
 *GitBook 地址：https://www.gitbook.com/book/firmianay/ctf-all-in-one/details*
 
+*PDF 文件地址：https://github.com/firmianay/CTF-All-In-One/releases*
 ## 目录
 ---
 请查看 [SUMMARY.md](SUMMARY.md)
@@ -15,6 +16,10 @@
 ## 合作和贡献
 ---
 请查看 [CONTRIBUTION.md](CONTRIBUTION.md)
+
+## 致谢
+---
+请查看 [THANKS](THANKS)
 
 ## LICENSE
 ---

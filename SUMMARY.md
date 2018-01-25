@@ -40,6 +40,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [1.7.4 Android 常用工具](doc/1.7.4_android_tools.md)
 * [二、工具篇](doc/2_tools.md)
   * [2.1 VM](doc/2.1_vm.md)
+    * [2.1.1 QEMU](doc/2.1.1_qemu.md)
   * [2.2 gdb/peda](doc/2.2_gdb.md)
   * [2.3 ollydbg](doc/2.3_ollydbg.md)
   * [2.4 windbg](doc/2.4_windbg.md)

@@ -1,6 +1,7 @@
 # 第二章 工具篇
 
 - [2.1 VM](2.1_vm.md)
+    - [2.1.1 QEMU](2.1.1_qemu.md)
 - [2.2 gdb/peda](2.2_gdb.md)
 - [2.3 ollydbg](2.3_ollydbg.md)
 - [2.4 windbg](2.4_windbg.md)

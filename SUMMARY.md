@@ -94,6 +94,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [5.9 反调试技术](doc/5.9_antidbg.md)
   * [5.10 反编译技术](doc/5.10_decompiling.md)
   * [5.11 RetDec 反编译器](doc/5.11_retdec.md)
+  * [5.12 Unicorn 模拟器](doc/5.12_unicorn.md)
 * [六、题解篇](doc/6_writeup.md)
   * pwn
     * [6.1.1 pwn HCTF2016 brop](doc/6.1.1_pwn_hctf2016_brop.md)

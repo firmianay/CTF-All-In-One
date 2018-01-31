@@ -13,3 +13,4 @@
 - [5.9 反调试技术](5.9_antidbg.md)
 - [5.10 反编译技术](5.10_decompiling.md)
 - [5.11 RetDec 反编译器](5.11_retdec.md)
+- [5.12 Unicorn 模拟器](5.12_unicorn.md)

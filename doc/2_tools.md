@@ -13,3 +13,4 @@
 - [2.10 metasploit](2.10_metasploit.md)
 - [2.11 binwalk](2.11_binwalk.md)
 - [2.12 Burp Suite](2.12_burpsuite.md)
+- [2.13 LLDB](2.13_lldb.md)

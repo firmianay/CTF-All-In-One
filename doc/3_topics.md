@@ -11,6 +11,7 @@
   - [3.3.5 Linux 堆利用（上）](3.3.5_heap_exploit_1.md)
   - [3.3.6 Linux 堆利用（中）](3.3.6_heap_exploit_2.md)
   - [3.3.7 Linux 堆利用（下）](3.3.7_heap_exploit_3.md)
+  - [3.3.8 Windows 内核漏洞利用](3.3.8_windows_kernel_exploit.md)
 - [3.4 Web](3.4_web.md)
   - [3.4.1 SQL 注入利用](3.4.1_sql_injection.md)
   - [3.4.2 XSS 漏洞利用](3.4.2_xss.md)

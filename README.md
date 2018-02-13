@@ -10,8 +10,8 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
 GitBook 地址：https://www.gitbook.com/book/firmianay/ctf-all-in-one/details
 
 PDF 文件地址：
-- https://www.gitbook.com/download/pdf/book/firmianay/ctf-all-in-one（推荐）
-- https://github.com/firmianay/CTF-All-In-One/releases（尚未完成，不推荐）
+- （推荐）https://www.gitbook.com/download/pdf/book/firmianay/ctf-all-in-one
+- （尚未完成，不推荐）https://github.com/firmianay/CTF-All-In-One/releases
 
 
 目录

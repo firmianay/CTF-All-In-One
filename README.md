@@ -22,6 +22,10 @@ PDF 文件地址：
 ---
 请查看 [CONTRIBUTION.md](CONTRIBUTION.md)
 
+常见问题
+---
+请查看 [FAQ.md](FAQ.md)
+
 致谢
 ---
 请查看 [THANKS](THANKS)

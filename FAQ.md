@@ -18,7 +18,7 @@ CTF 是网络安全技术人员之间进行技术竞技的一种比赛形式，�
 
 - 有 pdf/epub/mobi 版本吗？
 
-没有 epub/mobi 版本。暂时有 pdf，可在 GitBook 页面下载，未来考虑使用 Tex/LaTex 编写和编译，以提供更美观的 pdf。
+有，可在 GitBook 页面下载，未来考虑使用 Tex/LaTex 编写和编译，以提供更美观的 pdf。
 
 
 - 我能打印本书或者作为教材教课吗？

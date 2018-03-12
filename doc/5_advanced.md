@@ -10,7 +10,7 @@
   - [5.3.3 KLEE](5.3.3_klee.md)
   - [5.3.4 S²E](5.3.4_s2e.md)
 - 5.4
-- 5.5
+- [5.5 Clang](5.5_clang.md)
 - [5.6 LLVM](5.6_llvm.md)
 - [5.7 Capstone/Keystone](5.7_cap-keystone.md)
 - [5.8 SAT/SMT](5.8_sat-smt.md)

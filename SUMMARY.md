@@ -95,7 +95,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [5.3.3 KLEE](doc/5.3.3_klee.md)
     * [5.3.4 S²E](doc/5.3.4_s2e.md)
   * 5.4
-  * 5.5
+  * [5.5 Clang](doc/5.5_clang.md)
   * [5.6 LLVM](doc/5.6_llvm.md)
   * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
   * [5.8 SAT/SMT](doc/5.8_sat-smt.md)

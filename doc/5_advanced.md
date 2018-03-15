@@ -1,6 +1,6 @@
 # 第五章 高级篇
 
-- [5.1 Fuzz 测试](5.1_fuzz.md)
+- [5.1 模糊测试](5.1_fuzzing.md)
   - [5.1.1 AFL fuzzer](5.1.1_afl_fuzzer.md)
   - [5.1.2 libFuzzer](5.1.2_libfuzzer.md)
 - [5.2 Pin 动态二进制插桩](5.2_pin.md)

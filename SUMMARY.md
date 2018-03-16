@@ -118,6 +118,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.9 pwn RHme3 Exploitation](doc/6.1.9_rhme3_exploitation.md)
     * [6.1.10 pwn 0CTF2017 BabyHeap2017](doc/6.1.10_0ctf2017_babyheap2017.md)
     * [6.1.11 pwn 9447CTF2015 Search-Engine](doc/6.1.11_9447ctf2015_search_engine.md)
+    * [6.1.12 pwn N1CTF2018 vote](doc/6.1.12_n1ctf2018_vote.md)
   * re
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)

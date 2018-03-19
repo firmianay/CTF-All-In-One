@@ -71,6 +71,7 @@
 - 新增第六章题解篇，收集各种好题的 Writeup，应力求详细，且能提供程序供实际操作，一个 md 只写一题，所有文件上传到目录 `src/writeup`，题目最好来自 [CTFs](https://github.com/ctfs)。
 - 新增第七章实战篇，CTF 之后，总是要回到现实中，对真实存在的漏洞进行分析利用，还是一样力求详细，并提供程序复现，一个 md 写一个漏洞，所有文件上传到 `src/exploit`（程序太大的可附上网盘链接），参考 [exploit-db](https://www.exploit-db.com/)。
   - 考虑到真实漏洞的环境可能会很复杂，如果能做一个基于 docker 的环境，应该会很不错，这条就作为一个未来的计划。
+- 新增第八章学术篇，目前某人也处在读研还是工作的纠结中，但看看论文总不会错，一个 md 一篇文章或一类文章都可以，风格随意（参考 [How to Read an Engineering Research Paper](http://cseweb.ucsd.edu/%7Ewgg/CSE210/howtoread.html)）。论文的 pdf 我会统一上传到百度网盘。
 - 由于某人有强迫症，所以能用文本时绝不要截图:p，但有时候动图（gif）也是可以考虑的。
 - 看了下 GitBook 导出的 PDF，排版有点不忍直视，计划转战 LaTeX（XeLaTeX），即提供 md 和 tex 两个版本，tex 版本放在目录 `tex/` 下。
 - 有外国小哥哥邮件我希望提供了英文版，鉴于某人的英文水平，可能暂时不太现实，如果有人愿意承担这一部分工作，请告诉我。

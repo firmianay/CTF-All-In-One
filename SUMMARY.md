@@ -142,8 +142,9 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * 7.2.x
 * [八、学术篇](doc/8_academic.md)
   * Return-Oriented Programming
-    * [8.1 The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](doc/8.1_return-into-libc_without_function_calls.md)
-    * [8.2 Return-Oriented Programming without Returns](doc/8.2_return-oriented_programming_without_returns.md)
+    * [8.1.1 The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](doc/8.1.1_return-into-libc_without_function_calls.md)
+    * [8.1.2 Return-Oriented Programming without Returns](doc/8.1.2_return-oriented_programming_without_returns.md)
+    * [8.1.3 Return-Oriented Rootkits: Bypassing Kernel Code Integrity Protection Mechanisms](doc/8.1.3_return-oriented_rootkits.md)
   * Reverse Engineering
     * [8.3 New Frontiers of Reverse Engineering](doc/8.3_new_frontiers_of_reverse_engineering.md)
   * Android Security

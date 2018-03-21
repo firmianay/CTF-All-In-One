@@ -5,8 +5,12 @@
 
 * Return-Oriented Programming
   * [8.1.1 The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](doc/8.1.1_return-into-libc_without_function_calls.md)
-  * [8.1.2 Return-Oriented Programming without Returns](doc/8.1.2_return-oriented_programming_without_returns.md)
+  * [8.1.2 Return-Oriented Programming without Returns](doc/8.1.2_rop_without_returns.md)
   * [8.1.3 Return-Oriented Rootkits: Bypassing Kernel Code Integrity Protection Mechanisms](doc/8.1.3_return-oriented_rootkits.md)
+  * [8.1.4 ROPdefender: A Detection Tool to Defend Against Return-Oriented Programming Attacks](doc/8.1.4_ropdefender.md)
+* Symbolic Execution
+  * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](doc/8.2.1_dynamic_taint_analysis.md)
+  * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](doc/8.2.2_symbolic_execution_for_software_testing.md)
 * Reverse Engineering
   * [8.3 New Frontiers of Reverse Engineering](doc/8.3_new_frontiers_of_reverse_engineering.md)
 * Android Security

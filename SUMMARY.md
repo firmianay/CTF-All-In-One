@@ -120,6 +120,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.10 pwn 0CTF2017 BabyHeap2017](doc/6.1.10_0ctf2017_babyheap2017.md)
     * [6.1.11 pwn 9447CTF2015 Search-Engine](doc/6.1.11_9447ctf2015_search_engine.md)
     * [6.1.12 pwn N1CTF2018 vote](doc/6.1.12_n1ctf2018_vote.md)
+    * [6.1.13 pwn 34C3CTF2017 readme_revenge](doc/6.1.13_34c3ctf2017_readme_revenge.md)
   * re
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
@@ -146,6 +147,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [8.1.2 Return-Oriented Programming without Returns](doc/8.1.2_rop_without_returns.md)
     * [8.1.3 Return-Oriented Rootkits: Bypassing Kernel Code Integrity Protection Mechanisms](doc/8.1.3_return-oriented_rootkits.md)
     * [8.1.4 ROPdefender: A Detection Tool to Defend Against Return-Oriented Programming Attacks](doc/8.1.4_ropdefender.md)
+    * [8.1.5 Data-Oriented Programming: On the Expressiveness of Non-Control Data Attacks](doc/8.1.5_data-oriented_programming.md)
   * Symbolic Execution
     * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](doc/8.2.1_dynamic_taint_analysis.md)
     * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](doc/8.2.2_symbolic_execution_for_software_testing.md)

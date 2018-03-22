@@ -13,6 +13,7 @@
   - [6.1.10 pwn 0CTF2017 BabyHeap2017](6.1.10_0ctf2017_babyheap2017.md)
   - [6.1.11 pwn 9447CTF2015 Search-Engine](6.1.11_9447ctf2015_search_engine.md)
   - [6.1.12 pwn N1CTF2018 vote](6.1.12_n1ctf2018_vote.md)
+  - [6.1.13 pwn 34C3CTF2017 readme_revenge](6.1.13_34c3ctf2017_readme_revenge.md)
 - re
   - [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   - [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

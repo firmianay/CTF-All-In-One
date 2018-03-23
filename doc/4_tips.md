@@ -8,5 +8,5 @@
 - [4.6 one-gadget RCE](4.6_one-gadget_rce.md)
 - [4.7 通用 gadget](4.7_common_gadget.md)
 - [4.8 使用 DynELF 泄露函数地址](4.8_dynelf.md)
-- [4.9 给 ELF 文件打 patch](4.9_patch_elf.md)
-- [4.10 给 PE 文件打 patch](4.10_patch_pe.md)
+- [4.9 patch 二进制文件](4.9_patch_binary.md)
+- [4.10 反调试技术](4.10_antidbg.md)

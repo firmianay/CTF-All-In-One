@@ -84,8 +84,8 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.6 one-gadget RCE](doc/4.6_one-gadget_rce.md)
   * [4.7 通用 gadget](doc/4.7_common_gadget.md)
   * [4.8 使用 DynELF 泄露函数地址](doc/4.8_dynelf.md)
-  * [4.9 给 ELF 文件打 patch](doc/4.9_patch_elf.md)
-  * [4.10 给 PE 文件打 patch](doc/4.10_patch_pe.md)
+  * [4.9 patch 二进制文件](doc/4.9_patch_binary.md)
+  * [4.10 反调试技术](doc/4.10_antidbg.md)
 * [五、高级篇](doc/5_advanced.md)
   * [5.1 模糊测试](doc/5.1_fuzzing.md)
     * [5.1.1 AFL fuzzer](doc/5.1.1_afl_fuzzer.md)
@@ -102,7 +102,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
   * [5.8 SAT/SMT](doc/5.8_sat-smt.md)
     * [5.8.1 Z3](doc/5.8.1_z3.md)
-  * [5.9 反调试技术](doc/5.9_antidbg.md)
+  * 5.9
   * [5.10 反编译技术](doc/5.10_decompiling.md)
     * [5.10.1 RetDec](doc/5.10.1_retdec.md)
   * 5.11

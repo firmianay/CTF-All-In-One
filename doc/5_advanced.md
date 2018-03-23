@@ -15,7 +15,7 @@
 - [5.7 Capstone/Keystone](5.7_cap-keystone.md)
 - [5.8 SAT/SMT](5.8_sat-smt.md)
   - [5.8.1 Z3](5.8.1_z3.md)
-- [5.9 反调试技术](5.9_antidbg.md)
+- 5.9
 - [5.10 反编译技术](5.10_decompiling.md)
   - [5.10.1 RetDec](5.10.1_retdec.md)
 - 5.11

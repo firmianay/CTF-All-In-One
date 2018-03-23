@@ -69,6 +69,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [3.3.9 内核 ROP](doc/3.3.9_kernel_rop.md)
     * [3.3.10 Linux 内核漏洞利用](doc/3.3.10_linux_kernel_exploit.md)
     * [3.3.11 Windows 内核漏洞利用](doc/3.3.11_windows_kernel_exploit.md)
+    * [3.3.12 竞争条件](doc/3.3.12_race_condition.md)
   * [3.4 Web](doc/3.4_web.md)
     * [3.4.1 SQL 注入利用](doc/3.4.1_sql_injection.md)
     * [3.4.2 XSS 漏洞利用](doc/3.4.2_xss.md)
@@ -148,6 +149,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [8.1.3 Return-Oriented Rootkits: Bypassing Kernel Code Integrity Protection Mechanisms](doc/8.1.3_return-oriented_rootkits.md)
     * [8.1.4 ROPdefender: A Detection Tool to Defend Against Return-Oriented Programming Attacks](doc/8.1.4_ropdefender.md)
     * [8.1.5 Data-Oriented Programming: On the Expressiveness of Non-Control Data Attacks](doc/8.1.5_data-oriented_programming.md)
+    * [8.1.6 Hacking Blind](doc/8.1.6_hacking_blind.md)
   * Symbolic Execution
     * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](doc/8.2.1_dynamic_taint_analysis.md)
     * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](doc/8.2.2_symbolic_execution_for_software_testing.md)

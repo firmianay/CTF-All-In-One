@@ -15,6 +15,7 @@
   - [3.3.9 内核 ROP](3.3.9_kernel_rop.md)
   - [3.3.10 Linux 内核漏洞利用](3.3.10_linux_kernel_exploit.md)
   - [3.3.11 Windows 内核漏洞利用](3.3.11_windows_kernel_exploit.md)
+  - [3.3.12 竞争条件](3.3.12_race_condition.md)
 - [3.4 Web](3.4_web.md)
   - [3.4.1 SQL 注入利用](3.4.1_sql_injection.md)
   - [3.4.2 XSS 漏洞利用](3.4.2_xss.md)

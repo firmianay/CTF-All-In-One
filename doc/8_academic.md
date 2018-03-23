@@ -9,6 +9,7 @@
   * [8.1.3 Return-Oriented Rootkits: Bypassing Kernel Code Integrity Protection Mechanisms](8.1.3_return-oriented_rootkits.md)
   * [8.1.4 ROPdefender: A Detection Tool to Defend Against Return-Oriented Programming Attacks](8.1.4_ropdefender.md)
   * [8.1.5 Data-Oriented Programming: On the Expressiveness of Non-Control Data Attacks](8.1.5_data-oriented_programming.md)
+  * [8.1.6 Hacking Blind](8.1.6_hacking_blind.md)
 * Symbolic Execution
   * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](8.2.1_dynamic_taint_analysis.md)
   * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](8.2.2_symbolic_execution_for_software_testing.md)

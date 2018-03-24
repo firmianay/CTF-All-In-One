@@ -10,3 +10,4 @@
 - [4.8 使用 DynELF 泄露函数地址](4.8_dynelf.md)
 - [4.9 patch 二进制文件](4.9_patch_binary.md)
 - [4.10 反调试技术](4.10_antidbg.md)
+- [4.11 指令混淆](4.11_instruction_confusion.md)

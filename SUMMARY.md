@@ -86,6 +86,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.8 使用 DynELF 泄露函数地址](doc/4.8_dynelf.md)
   * [4.9 patch 二进制文件](doc/4.9_patch_binary.md)
   * [4.10 反调试技术](doc/4.10_antidbg.md)
+  * [4.11 指令混淆](doc/4.11_instruction_confusion.md)
 * [五、高级篇](doc/5_advanced.md)
   * [5.1 模糊测试](doc/5.1_fuzzing.md)
     * [5.1.1 AFL fuzzer](doc/5.1.1_afl_fuzzer.md)

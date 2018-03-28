@@ -88,6 +88,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.10 反调试技术](doc/4.10_antidbg.md)
   * [4.11 指令混淆](doc/4.11_instruction_confusion.md)
 * [五、高级篇](doc/5_advanced.md)
+  * [5.0 软件漏洞分析](doc/5.0_vulnerability.md)
   * [5.1 模糊测试](doc/5.1_fuzzing.md)
     * [5.1.1 AFL fuzzer](doc/5.1.1_afl_fuzzer.md)
     * [5.1.2 libFuzzer](doc/5.1.2_libfuzzer.md)
@@ -108,10 +109,10 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [5.7 Capstone/Keystone](doc/5.7_cap-keystone.md)
   * [5.8 SAT/SMT](doc/5.8_sat-smt.md)
     * [5.8.1 Z3](doc/5.8.1_z3.md)
-  * 5.9
-  * [5.10 反编译技术](doc/5.10_decompiling.md)
-    * [5.10.1 RetDec](doc/5.10.1_retdec.md)
-  * 5.11
+  * [5.9 基于模式的漏洞分析](doc/5.9_pattern_based_detection.md)
+  * [5.10 基于二进制比对的漏洞分析](doc/5.10_diff_based_detection.md)
+  * [5.11 反编译技术](doc/5.11_decompiling.md)
+    * [5.11.1 RetDec](doc/5.11.1_retdec.md)
   * [5.12 Unicorn 模拟器](doc/5.12_unicorn.md)
 * [六、题解篇](doc/6_writeup.md)
   * pwn

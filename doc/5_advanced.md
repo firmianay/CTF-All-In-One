@@ -1,5 +1,6 @@
 # 第五章 高级篇
 
+- [5.0 软件漏洞分析](5.0_vulnerability.md)
 - [5.1 模糊测试](5.1_fuzzing.md)
   - [5.1.1 AFL fuzzer](5.1.1_afl_fuzzer.md)
   - [5.1.2 libFuzzer](5.1.2_libfuzzer.md)
@@ -20,8 +21,8 @@
 - [5.7 Capstone/Keystone](5.7_cap-keystone.md)
 - [5.8 SAT/SMT](5.8_sat-smt.md)
   - [5.8.1 Z3](5.8.1_z3.md)
-- 5.9
-- [5.10 反编译技术](5.10_decompiling.md)
-  - [5.10.1 RetDec](5.10.1_retdec.md)
-- 5.11
+- [5.9 基于模式的漏洞分析](5.9_pattern_based_detection.md)
+- [5.10 基于二进制比对的漏洞分析](5.10_diff_based_detection.md)
+- [5.11 反编译技术](5.11_decompiling.md)
+  - [5.11.1 RetDec](5.11.1_retdec.md)
 - [5.12 Unicorn 模拟器](5.12_unicorn.md)

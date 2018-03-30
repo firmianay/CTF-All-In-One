@@ -25,6 +25,8 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [1.5.6 动态链接](doc/1.5.6_dynamic_link.md)
     * [1.5.7 内存管理](doc/1.5.7_memory.md)
     * [1.5.8 glibc malloc](doc/1.5.8_glibc_malloc.md)
+    * [1.5.9 Linux 内核](doc/1.5.9_linux_kernel.md)
+    * [1.5.10 Windows 内核](doc/1.5.10_windows_kernel.md)
   * [1.6 密码学基础](doc/1.6_crypto_basic.md)
     * [1.6.1 初等数论](doc/1.6.1_number_theory.md)
     * [1.6.2 近世代数](doc/1.6.2_modern_algebra.md)

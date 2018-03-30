@@ -19,6 +19,8 @@
   - [1.5.6 动态链接](1.5.6_dynamic_link.md)
   - [1.5.7 内存管理](1.5.7_memory.md)
   - [1.5.8 glibc malloc](1.5.8_glibc_malloc.md)
+  - [1.5.9 Linux 内核](1.5.9_linux_kernel.md)
+  - [1.5.10 Windows 内核](1.5.10_windows_kernel.md)
 - [1.6 密码学基础](1.6_crypto_basic.md)
     - [1.6.1 初等数论](1.6.1_number_theory.md)
     - [1.6.2 近世代数](1.6.2_modern_algebra.md)

@@ -1,0 +1,10 @@
+digraph {
+	0 [style="filled"];
+	2 [shape="doublecircle"];
+	3 [shape="doublecircle"];
+
+	0 -> 2 [label="被使用"];
+	0 -> 3 [label="释放"];
+	0 -> 1 [label="释放"];
+	1 -> 0 [label="分配"];
+}

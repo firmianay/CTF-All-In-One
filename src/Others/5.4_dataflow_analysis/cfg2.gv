@@ -1,0 +1,20 @@
+digraph {
+	labelloc = "title";
+	label = "int contrived_caller(int *w, int x, int *p)";
+	node [shape="record"];
+
+	bb0 [label="BB0"];
+	bb1 [label="BB1: param p\n
+		call kfree\n
+		param p\n
+		param w\n
+		param\n
+		call contrived"];
+	bb2 [label="BB2: r = ret\n
+		w1 = *w"];
+	bb3 [label="BB3"];
+
+	bb0 -> bb1;
+	bb1 -> bb2;
+	bb2 -> bb3;
+}

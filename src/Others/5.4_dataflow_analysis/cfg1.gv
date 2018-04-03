@@ -1,0 +1,22 @@
+digraph {
+	labelloc = "title";
+	label = "int contrived(int *p, int *w, int x)";
+	node [shape="record"];
+
+	bb0 [label="BB0"];
+	bb1 [label="BB1: if(x)"];
+	bb2 [label="BB2: param w"];
+	bb3 [label="BB3: x1 =! x"];
+	bb4 [label="BB4: w1 = *w"];
+	bb5 [label="BB5: q1 = *q"];
+	bb6 [label="BB6"];
+
+	bb0 -> bb1;
+	bb1 -> bb2;
+	bb1 -> bb3;
+	bb2 -> bb3;
+	bb3 -> bb4;
+	bb3 -> bb5;
+	bb4 -> bb6;
+	bb5 -> bb6;
+}

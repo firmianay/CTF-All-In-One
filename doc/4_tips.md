@@ -11,3 +11,4 @@
 - [4.9 patch 二进制文件](4.9_patch_binary.md)
 - [4.10 反调试技术](4.10_antidbg.md)
 - [4.11 指令混淆](4.11_instruction_confusion.md)
+- [4.12 利用 __stack_chk_fail](4.12_stack_chk_fail.md)

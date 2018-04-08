@@ -14,6 +14,7 @@
   - [6.1.11 pwn 9447CTF2015 Search-Engine](6.1.11_pwn_9447ctf2015_search_engine.md)
   - [6.1.12 pwn N1CTF2018 vote](6.1.12_pwn_n1ctf2018_vote.md)
   - [6.1.13 pwn 34C3CTF2017 readme_revenge](6.1.13_pwn_34c3ctf2017_readme_revenge.md)
+  - [6.1.14 pwn 32C3CTF2015 readme](6.1.14_pwn_32c3ctf2015_readme.md)
 - re
   - [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   - [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

@@ -89,6 +89,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.9 patch 二进制文件](doc/4.9_patch_binary.md)
   * [4.10 反调试技术](doc/4.10_antidbg.md)
   * [4.11 指令混淆](doc/4.11_instruction_confusion.md)
+  * [4.12 利用 __stack_chk_fail](doc/4.12_stack_chk_fail.md)
 * [五、高级篇](doc/5_advanced.md)
   * [5.0 软件漏洞分析](doc/5.0_vulnerability.md)
   * [5.1 模糊测试](doc/5.1_fuzzing.md)
@@ -132,6 +133,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.11 pwn 9447CTF2015 Search-Engine](doc/6.1.11_pwn_9447ctf2015_search_engine.md)
     * [6.1.12 pwn N1CTF2018 vote](doc/6.1.12_pwn_n1ctf2018_vote.md)
     * [6.1.13 pwn 34C3CTF2017 readme_revenge](doc/6.1.13_pwn_34c3ctf2017_readme_revenge.md)
+    * [6.1.14 pwn 32C3CTF2015 readme](doc/6.1.14_pwn_32c3ctf2015_readme.md)
   * re
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
@@ -163,6 +165,8 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * Symbolic Execution
     * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](doc/8.2.1_dynamic_taint_analysis.md)
     * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](doc/8.2.2_symbolic_execution_for_software_testing.md)
+  * [Address Space Layout Randomization](doc/8.3_aslr_review.md)
+    * [8.3.1 Address Space Layout Permutation (ASLP): Towards Fine-Grained Randomization of Commodity Software](doc/8.3.1_aslp.md)
   * Code Obfuscation
   * Reverse Engineering
     * [8.3 New Frontiers of Reverse Engineering](doc/8.3_new_frontiers_of_reverse_engineering.md)

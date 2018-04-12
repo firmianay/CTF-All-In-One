@@ -1,0 +1,16 @@
+digraph {
+    0 [shape="none", label=""];
+    1 [shape="diamond", label="2*y == x"];
+    2 [shape="box", label="x = 0\ny = 1"];
+    3 [shape="diamond", label="x > y+10"];
+    4 [shape="box", label="x = 2\ny = 1"];
+    5 [shape="box", label="x = 30\ny = 15"];
+    6 [shape="plaintext", label="ERROR"];
+
+    0 -> 1;
+    1 -> 2 [label="false"];
+    1 -> 3 [label="true"];
+    3 -> 4 [label="false"];
+    3 -> 5 [label="true"];
+    5 -> 6;
+}

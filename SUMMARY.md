@@ -78,7 +78,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [3.5 Misc](doc/3.5_misc.md)
   * [3.6 Mobile](doc/3.6_mobile.md)
 * [四、技巧篇](doc/4_tips.md)
-  * 4.1
+  * [4.1 Linux 内核调试](doc/4.1_linux_kernel_debug.md)
   * [4.2 Linux 命令行技巧](doc/4.2_Linux_terminal_tips.md)
   * [4.3 GCC 编译参数解析](doc/4.3_gcc_arg.md)
   * [4.4 GCC 堆栈保护技术](doc/4.4_gcc_sec.md)
@@ -165,6 +165,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * Symbolic Execution
     * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](doc/8.2.1_dynamic_taint_analysis.md)
     * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](doc/8.2.2_symbolic_execution_for_software_testing.md)
+    * [8.2.3 AEG: Automatic Exploit Generation](doc/8.2.3_automatic_exploit_generation.md)
   * [Address Space Layout Randomization](doc/8.3_aslr_review.md)
     * [8.3.1 Address Space Layout Permutation (ASLP): Towards Fine-Grained Randomization of Commodity Software](doc/8.3.1_aslp.md)
   * Code Obfuscation

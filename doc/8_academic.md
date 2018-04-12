@@ -13,6 +13,7 @@
 * Symbolic Execution
   * [8.2.1 All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](8.2.1_dynamic_taint_analysis.md)
   * [8.2.2 Symbolic Execution for Software Testing: Three Decades Later](8.2.2_symbolic_execution_for_software_testing.md)
+  * [8.2.3 AEG: Automatic Exploit Generation](8.2.3_automatic_exploit_generation.md)
 * [Address Space Layout Randomization](8.3_aslr_review.md)
   * [8.3.1 Address Space Layout Permutation (ASLP): Towards Fine-Grained Randomization of Commodity Software](8.3.1_aslp.md)
 * Code Obfuscation

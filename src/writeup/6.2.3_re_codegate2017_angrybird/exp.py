@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import angr
 
 main  = 0x004007da

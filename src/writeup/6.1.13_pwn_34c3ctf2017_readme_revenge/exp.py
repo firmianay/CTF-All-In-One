@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from pwn import *
 
 io = process('./readme_revenge')

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from pwn import *
 
 io = process(['./freenote'], env={'LD_PRELOAD':'./libc.so.6_1'})

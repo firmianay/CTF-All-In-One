@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from pwn import *
 
 elf = ELF('./game')

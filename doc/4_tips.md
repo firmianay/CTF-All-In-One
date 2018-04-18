@@ -14,3 +14,4 @@
 - [4.12 利用 __stack_chk_fail](4.12_stack_chk_fail.md)
 - [4.13 利用 _IO_FILE 结构](4.13_io_file.md)
 - [4.14 glibc tcache 机制](4.14_glibc_tcache.md)
+- [4.15 利用 vsyscall 和 vDSO](4.15_vsyscall_vdso.md)

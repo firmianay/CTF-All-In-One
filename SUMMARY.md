@@ -92,6 +92,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.12 利用 __stack_chk_fail](doc/4.12_stack_chk_fail.md)
   * [4.13 利用 _IO_FILE 结构](doc/4.13_io_file.md)
   * [4.14 glibc tcache 机制](doc/4.14_glibc_tcache.md)
+  * [4.15 利用 vsyscall 和 vDSO](doc/4.15_vsyscall_vdso.md)
 * [五、高级篇](doc/5_advanced.md)
   * [5.0 软件漏洞分析](doc/5.0_vulnerability.md)
   * [5.1 模糊测试](doc/5.1_fuzzing.md)

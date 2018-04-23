@@ -141,6 +141,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.16 pwn HITBCTF2017 1000levels](doc/6.1.16_pwn_hitbctf2017_1000levels.md)
     * [6.1.17 pwn SECCONCTF2016 jmper](doc/6.1.17_pwn_secconctf2016_jmper.md)
     * [6.1.18 pwn HITBCTF2017 Sentosa](doc/6.1.18_pwn_hitbctf2017_sentosa.md)
+    * [6.1.19 pwn HITBCTF2018 gundam](doc/6.1.19_pwn_hitbctf2018_gundam.md)
   * re
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)

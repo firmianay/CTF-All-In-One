@@ -2,7 +2,7 @@
 
 from pwn import *
 
-context.log_level = 'debug'
+# context.log_level = 'debug'
 
 io = process(['./jmper'], env={'LD_PRELOAD':'./libc-2.19.so'})
 elf = ELF('jmper')

@@ -24,6 +24,8 @@
   * [6.1.21 pwn HITCONCTF2016 Secret_Holder](6.1.21_pwn_hitconctf2016_secret_holder.md)
   * [6.1.22 pwn HITCONCTF2016 Sleepy_Holder](6.1.22_pwn_hitconctf2016_sleepy_holder.md)
   * [6.1.23 pwn BCTF2016 bcloud](6.1.23_pwn_bctf2016_bcloud.md)
+  * [6.1.24 pwn HCTF2017 babyprintf](6.1.24_pwn_hctf2017_babyprintf.md)
+  * [6.1.25 pwn 34C3CTF2017 300](6.1.25_pwn_34c3ctf2017_300.md)
 * Reverse
   * [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   * [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

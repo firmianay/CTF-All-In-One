@@ -26,6 +26,8 @@
   * [6.1.23 pwn BCTF2016 bcloud](6.1.23_pwn_bctf2016_bcloud.md)
   * [6.1.24 pwn HCTF2017 babyprintf](6.1.24_pwn_hctf2017_babyprintf.md)
   * [6.1.25 pwn 34C3CTF2017 300](6.1.25_pwn_34c3ctf2017_300.md)
+  * [6.1.26 pwn SECCONCTF2016 tinypad](6.1.26_pwn_secconctf2016_tinypad.md)
+  * [6.1.27 pwn ASISCTF2016 b00ks](6.1.27_pwn_asisctf2016_b00ks.md)
 * Reverse
   * [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   * [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

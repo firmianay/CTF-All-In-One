@@ -18,7 +18,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [1.4.6 PHP 源码审计基础](doc/1.4.6_php_basic.md)
   * [1.5 逆向工程基础](doc/1.5_reverse_basic.md)
     * [1.5.1 C 语言基础](doc/1.5.1_c_basic.md)
-    * [1.5.2 x86/x86-64 汇编基础](doc/1.5.2_x86&x64.md)
+    * [1.5.2 x86/x86-64 汇编基础](doc/1.5.2_x86_x64.md)
     * [1.5.3 Linux ELF](doc/1.5.3_elf.md)
     * [1.5.4 Windows PE](doc/1.5.4_pe.md)
     * [1.5.5 静态链接](doc/1.5.5_static_link.md)

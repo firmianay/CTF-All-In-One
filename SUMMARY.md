@@ -27,6 +27,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [1.5.8 glibc malloc](doc/1.5.8_glibc_malloc.md)
     * [1.5.9 Linux 内核](doc/1.5.9_linux_kernel.md)
     * [1.5.10 Windows 内核](doc/1.5.10_windows_kernel.md)
+    * [1.5.11 jemalloc](doc/1.5.11_jemalloc.md)
   * [1.6 密码学基础](doc/1.6_crypto_basic.md)
   * [1.7 Android 安全基础](doc/1.7_android_basic.md)
     * [1.7.1 Android 环境搭建](doc/1.7.1_android_env.md)

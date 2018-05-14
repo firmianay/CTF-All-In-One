@@ -16,7 +16,7 @@
 * [5.4 数据流分析](5.4_dataflow_analysis.md)
   * [5.4.1 Soot](5.4.1_soot.md)
 * [5.5 污点分析](5.5_taint_analysis.md)
-  * [5.5.1 动态污点分析](5.5.1_dyn_taint_analysis.md)
+  * [5.5.1 TaintCheck](5.5.1_taintcheck.md)
 * [5.6 LLVM](5.6_llvm.md)
   * [5.6.1 Clang](5.6.1_clang.md)
 * [5.7 程序切片](5.7_slicing.md)

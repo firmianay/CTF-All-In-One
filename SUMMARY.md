@@ -174,6 +174,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [7.1.5 [CVE–2018-1000001] glibc Buffer Underflow](doc/7.1.5_glibc_2018-1000001.md)
     * [7.1.6 [CVE-2017-9430] DNSTracer 1.9 Buffer Overflow](doc/7.1.6_dnstracer_2017-9430.md)
     * [7.1.7 [CVE-2018-6323] GNU binutils 2.26.1 Integer Overflow](doc/7.1.7_binutils_2018-6323.md)
+    * [7.1.8 [CVE-2010-2883] Adobe Reader 9.3.4 Stack Buffer Overflow](doc/7.1.8_adobe_reader_2010-2883.md)
   * Malware
 * [八、学术篇](doc/8_academic.md)
   * [8.1 The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](doc/8.1_ret2libc_without_func_calls.md)

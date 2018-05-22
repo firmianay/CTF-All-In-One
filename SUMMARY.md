@@ -59,6 +59,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [2.4.4 binwalk](doc/2.4.4_binwalk.md)
     * [2.4.5 Burp Suite](doc/2.4.5_burpsuite.md)
     * [2.4.6 Wireshark](doc/2.4.6_wireshark.md)
+    * [2.4.7 Cuckoo Sandbox](doc/2.4.7_cuckoo.md)
 * [三、分类专题篇](doc/3_topics.md)
   * Pwn
     * [3.1.1 格式化字符串漏洞](doc/3.1.1_format_string.md)
@@ -156,10 +157,11 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * Reverse
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
-    * [6.2.3 re Codegate2017 angrybird](doc/6.2.3_re_codegate2017_angrybird.md)
+    * [6.2.3 re CodegateCTF2017 angrybird](doc/6.2.3_re_codegatectf2017_angrybird.md)
     * [6.2.4 re CSAWCTF2015 wyvern](doc/6.2.4_re_csawctf2015_wyvern.md)
     * [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
-    * [6.2.6 re SECCON2017 printf_machine](doc/6.2.6_re_seccon2017_printf_machine.md)
+    * [6.2.6 re SECCONCTF2017 printf_machine](doc/6.2.6_re_secconctf2017_printf_machine.md)
+    * [6.2.7 re CodegateCTF2018 RedVelvet](doc/6.2.7_re_codegatectf2018_redvelvet.md)
   * Web
     * [6.3.1 web HCTF2017 babycrack](doc/6.3.1_web_hctf2017_babycrack.md)
   * Crypto
@@ -175,7 +177,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [7.1.6 CVE-2017-9430 DNSTracer 栈溢出漏洞](doc/7.1.6_dnstracer_2017-9430.md)
     * [7.1.7 CVE-2018-6323 GNU binutils elf_object_p 整型溢出漏洞](doc/7.1.7_binutils_2018-6323.md)
     * [7.1.8 CVE-2010-2883 Adobe CoolType SING 表栈溢出漏洞](doc/7.1.8_adobe_reader_2010-2883.md)
-    * [7.1.9 CVE-2010-2333 Microsoft Word RTF pFragments 栈溢出漏洞](doc/7.1.9_ms_word_2010-2333.md)
+    * [7.1.9 CVE-2010-3333 Microsoft Word RTF pFragments 栈溢出漏洞](doc/7.1.9_ms_word_2010-3333.md)
   * Malware
 * [八、学术篇](doc/8_academic.md)
   * [8.1 The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](doc/8.1_ret2libc_without_func_calls.md)

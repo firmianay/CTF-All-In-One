@@ -32,10 +32,11 @@
 * Reverse
   * [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   * [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)
-  * [6.2.3 re Codegate2017 angrybird](6.2.3_re_codegate2017_angrybird.md)
+  * [6.2.3 re CodegateCTF2017 angrybird](6.2.3_re_codegatectf2017_angrybird.md)
   * [6.2.4 re CSAWCTF2015 wyvern](6.2.4_re_csawctf2015_wyvern.md)
   * [6.2.5 re PicoCTF2014 Baleful](6.2.5_re_picoctf2014_baleful.md)
-  * [6.2.6 re SECCON2017 printf_machine](6.2.6_re_seccon2017_printf_machine.md)
+  * [6.2.6 re SECCONCTF2017 printf_machine](6.2.6_re_secconctf2017_printf_machine.md)
+  * [6.2.7 re CodegateCTF2018 RedVelvet](6.2.7_re_codegatectf2018_redvelvet.md)
 * Web
   * [6.3.1 web HCTF2017 babycrack](6.3.1_web_hctf2017_babycrack.md)
 * Crypto

@@ -24,3 +24,4 @@
   * [2.4.4 binwalk](2.4.4_binwalk.md)
   * [2.4.5 Burp Suite](2.4.5_burpsuite.md)
   * [2.4.6 Wireshark](2.4.6_wireshark.md)
+  * [2.4.7 Cuckoo Sandbox](2.4.7_cuckoo.md)

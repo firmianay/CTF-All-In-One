@@ -8,9 +8,9 @@
 * [4.6 one-gadget RCE](4.6_one-gadget_rce.md)
 * [4.7 通用 gadget](4.7_common_gadget.md)
 * [4.8 使用 DynELF 泄露函数地址](4.8_dynelf.md)
-* [4.9 patch 二进制文件](4.9_patch_binary.md)
-* [4.10 反调试技术](4.10_antidbg.md)
-* [4.11 指令混淆](4.11_instruction_confusion.md)
+* [4.9 shellcode 开发](doc/4.9_shellcode.md)
+* 4.10
+* 4.11
 * [4.12 利用 __stack_chk_fail](4.12_stack_chk_fail.md)
 * [4.13 利用 _IO_FILE 结构](4.13_io_file.md)
 * [4.14 glibc tcache 机制](4.14_glibc_tcache.md)

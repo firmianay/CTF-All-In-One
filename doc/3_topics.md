@@ -14,6 +14,12 @@
   * [3.1.11 Windows 内核漏洞利用](3.1.11_windows_kernel_exploit.md)
   * [3.1.12 竞争条件](3.1.12_race_condition.md)
 * Reverse
+  * [3.2.1 patch 二进制文件](3.2.1_patch_binary.md)
+  * [3.2.2 脱壳技术（PE）](3.2.2_pe_unpack.md)
+  * [3.2.3 脱壳技术(ELF)](3.2.3_elf_unpack.md)
+  * [3.2.4 反调试技术（PE）](3.2.4_pe_anti_debugging.md)
+  * [3.2.5 反调试技术（ELF）](3.2.5_elf_anti_debugging.md)
+  * [3.2.6 指令混淆](3.2.6_instruction_confusion.md)
 * Web
   * [3.3.1 SQL 注入利用](3.3.1_sql_injection.md)
   * [3.3.2 XSS 漏洞利用](3.3.2_xss.md)

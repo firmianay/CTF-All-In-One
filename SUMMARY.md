@@ -154,6 +154,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.26 pwn 34C3CTF2017 300](doc/6.1.26_pwn_34c3ctf2017_300.md)
     * [6.1.27 pwn SECCONCTF2016 tinypad](doc/6.1.27_pwn_secconctf2016_tinypad.md)
     * [6.1.28 pwn ASISCTF2016 b00ks](doc/6.1.28_pwn_asisctf2016_b00ks.md)
+    * [6.1.29 pwn Insomni'hack_teaserCTF2017 The_Great_Escape_part-3](doc/6.1.29_pwn_insomnictf2017_the_great_escape3.md)
   * Reverse
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)

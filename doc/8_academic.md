@@ -27,3 +27,4 @@
 * [8.22 Practical Memory Checking With Dr. Memory](8.22_memory_checking.md)
 * [8.23 Evaluating the Effectiveness of Current Anti-ROP Defenses](8.23_current_anti-rop.md)
 * [8.24 How to Make ASLR Win the Clone Wars: Runtime Re-Randomization](8.24_runtime_re-randomization.md)
+* [8.25 (State of) The Art of War: Offensive Techniques in Binary Analysis](8.25_offsensive_techniques.md)

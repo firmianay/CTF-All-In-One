@@ -38,6 +38,7 @@
   * [6.2.5 re PicoCTF2014 Baleful](6.2.5_re_picoctf2014_baleful.md)
   * [6.2.6 re SECCONCTF2017 printf_machine](6.2.6_re_secconctf2017_printf_machine.md)
   * [6.2.7 re CodegateCTF2018 RedVelvet](6.2.7_re_codegatectf2018_redvelvet.md)
+  * [6.2.8 re DefcampCTF2015 entry_language](6.2.8_re_defcampctf2015_entry_language.md)
 * Web
   * [6.3.1 web HCTF2017 babycrack](6.3.1_web_hctf2017_babycrack.md)
 * Crypto

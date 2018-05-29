@@ -170,6 +170,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.2.5 re PicoCTF2014 Baleful](doc/6.2.5_re_picoctf2014_baleful.md)
     * [6.2.6 re SECCONCTF2017 printf_machine](doc/6.2.6_re_secconctf2017_printf_machine.md)
     * [6.2.7 re CodegateCTF2018 RedVelvet](doc/6.2.7_re_codegatectf2018_redvelvet.md)
+    * [6.2.8 re DefcampCTF2015 entry_language](doc/6.2.8_re_defcampctf2015_entry_language.md)
   * Web
     * [6.3.1 web HCTF2017 babycrack](doc/6.3.1_web_hctf2017_babycrack.md)
   * Crypto
@@ -212,6 +213,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [8.22 Practical Memory Checking With Dr. Memory](doc/8.22_memory_checking.md)
   * [8.23 Evaluating the Effectiveness of Current Anti-ROP Defenses](doc/8.23_current_anti-rop.md)
   * [8.24 How to Make ASLR Win the Clone Wars: Runtime Re-Randomization](doc/8.24_runtime_re-randomization.md)
+  * [8.25 (State of) The Art of War: Offensive Techniques in Binary Analysis](doc/8.25_offsensive_techniques.md)
 * [九、附录](doc/9_appendix.md)
   * [9.1 更多 Linux 工具](doc/9.1_Linuxtools.md)
   * [9.2 更多 Windows 工具](doc/9.2_wintools.md)

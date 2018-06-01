@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import angr
 
 project = angr.Project("entry_language", auto_load_libs=False)

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 str_list = ["Dufhbmf", "pG`imos", "ewUglpt"]
 passwd = []
 for i in range(12):

@@ -28,3 +28,7 @@
 * [8.23 Evaluating the Effectiveness of Current Anti-ROP Defenses](8.23_current_anti-rop.md)
 * [8.24 How to Make ASLR Win the Clone Wars: Runtime Re-Randomization](8.24_runtime_re-randomization.md)
 * [8.25 (State of) The Art of War: Offensive Techniques in Binary Analysis](8.25_offsensive_techniques.md)
+* [8.26 Driller: Augmenting Fuzzing Through Selective Symbolic Execution](8.26_driller_fuzzing.md)
+* [8.27 Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware](8.27_firmalice_bypass.md)
+* [8.28 Cross-Architecture Bug Search in Binary Executables](8.28_cross_arch_bug_search.md)
+* [8.29 Dynamic Hooks: Hiding Control Flow Changes within Non-Control Data](8.29_dynamic_hooks.md)

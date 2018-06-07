@@ -4,8 +4,8 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./sentosa'], env={'LD_PRELOAD':'./libc.so.6'})
-libc = ELF('libc.so.6')
+io = process(['./sentosa'], env={'LD_PRELOAD':'./libc-2.23.so'})
+libc = ELF('libc-2.23.so')
 
 def start_proj(length, name, price, area, capacity):
     io.sendlineafter("Exit\n", '1')

@@ -4,8 +4,8 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./300'], env={'LD_PRELOAD':'./libc.so.6'})
-libc = ELF('libc.so.6')
+io = process(['./300'], env={'LD_PRELOAD':'./libc-2.24.so'})
+libc = ELF('libc-2.24.so')
 
 def alloc(idx):
     io.sendlineafter("free\n", '1')

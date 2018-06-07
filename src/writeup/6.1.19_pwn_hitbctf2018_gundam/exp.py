@@ -4,9 +4,9 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./gundam'], env={'LD_PRELOAD':'./libc.so.6'})
+io = process(['./gundam'], env={'LD_PRELOAD':'./libc-2.26.so'})
 #elf = ELF('gundam')
-libc = ELF('libc.so.6')
+libc = ELF('libc-2.26.so')
 
 def build(name):
     io.sendlineafter("choice : ", '1')

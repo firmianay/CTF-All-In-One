@@ -4,9 +4,9 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./SleepyHolder'], env={'LD_PRELOAD':'./libc.so.6'})
+io = process(['./SleepyHolder'], env={'LD_PRELOAD':'./libc-2.23.so'})
 elf = ELF('SleepyHolder')
-libc = ELF('libc.so.6')
+libc = ELF('libc-2.23.so')
 
 small_ptr = 0x006020d0
 big_ptr = 0x006020c0

@@ -2,9 +2,9 @@
 
 from pwn import *
 
-io = process(['./freenote'], env={'LD_PRELOAD':'./libc.so.6_1'})
+io = process(['./freenote'], env={'LD_PRELOAD':'./libc-2.19.so'})
 elf = ELF('freenote')
-libc = ELF('libc.so.6_1')
+libc = ELF('libc-2.19.so')
 
 def newnote(x):
     io.recvuntil("Your choice: ")

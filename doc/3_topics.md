@@ -14,6 +14,7 @@
   * [3.1.11 Linux 内核漏洞利用](3.1.11_linux_kernel_exploit.md)
   * [3.1.12 Windows 内核漏洞利用](3.1.12_windows_kernel_exploit.md)
   * [3.1.13 竞争条件](3.1.13_race_condition.md)
+  * [3.1.14 虚拟机逃逸](3.1.14_vm_escape.md)
 * Reverse
   * [3.2.1 patch 二进制文件](3.2.1_patch_binary.md)
   * [3.2.2 脱壳技术（PE）](3.2.2_pe_unpack.md)

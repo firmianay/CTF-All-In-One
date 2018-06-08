@@ -32,3 +32,4 @@
 * [8.27 Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware](8.27_firmalice_bypass.md)
 * [8.28 Cross-Architecture Bug Search in Binary Executables](8.28_cross_arch_bug_search.md)
 * [8.29 Dynamic Hooks: Hiding Control Flow Changes within Non-Control Data](8.29_dynamic_hooks.md)
+* [8.30 Preventing brute force attacks against stack canary protection on networking servers](8.30_prevent_brute_force_canary.md)

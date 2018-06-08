@@ -32,6 +32,8 @@
   * [6.1.29 pwn Insomni'hack_teaserCTF2017 The_Great_Escape_part-3](6.1.29_pwn_insomnictf2017_the_great_escape3.md)
   * [6.1.30 pwn HITCONCTF2017 Ghost_in_the_heap](6.1.30_pwn_hitconctf2017_ghost_in_the_heap.md)
   * [6.1.31 pwn HITBCTF2018 mutepig](6.1.31_pwn_hitbctf2018_mutepig.md)
+  * [6.1.32 pwn SECCONCTF2017 vm_no_fun](6.1.32_pwn_secconctf2017_vm_no_fun.md)
+  * [6.1.33 pwn 34C3CTF2017 LFA](6.1.33_pwn_34c3ctf2017_lfa.md)
 * Reverse
   * [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   * [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

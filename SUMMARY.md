@@ -76,6 +76,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [3.1.11 Linux 内核漏洞利用](doc/3.1.11_linux_kernel_exploit.md)
     * [3.1.12 Windows 内核漏洞利用](doc/3.1.12_windows_kernel_exploit.md)
     * [3.1.13 竞争条件](doc/3.1.13_race_condition.md)
+    * [3.1.14 虚拟机逃逸](doc/3.1.14_vm_escape.md)
   * Reverse
     * [3.2.1 patch 二进制文件](doc/3.2.1_patch_binary.md)
     * [3.2.2 脱壳技术（PE）](doc/3.2.2_pe_unpack.md)
@@ -165,6 +166,8 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
     * [6.1.29 pwn Insomni'hack_teaserCTF2017 The_Great_Escape_part-3](doc/6.1.29_pwn_insomnictf2017_the_great_escape3.md)
     * [6.1.30 pwn HITCONCTF2017 Ghost_in_the_heap](doc/6.1.30_pwn_hitconctf2017_ghost_in_the_heap.md)
     * [6.1.31 pwn HITBCTF2018 mutepig](doc/6.1.31_pwn_hitbctf2018_mutepig.md)
+    * [6.1.32 pwn SECCONCTF2017 vm_no_fun](doc/6.1.32_pwn_secconctf2017_vm_no_fun.md)
+    * [6.1.33 pwn 34C3CTF2017 LFA](doc/6.1.33_pwn_34c3ctf2017_lfa.md)
   * Reverse
     * [6.2.1 re XHPCTF2017 dont_panic](doc/6.2.1_re_xhpctf2017_dont_panic.md)
     * [6.2.2 re ECTF2016 tayy](doc/6.2.2_re_ectf2016_tayy.md)
@@ -221,6 +224,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [8.27 Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware](doc/8.27_firmalice_bypass.md)
   * [8.28 Cross-Architecture Bug Search in Binary Executables](doc/8.28_cross_arch_bug_search.md)
   * [8.29 Dynamic Hooks: Hiding Control Flow Changes within Non-Control Data](doc/8.29_dynamic_hooks.md)
+  * [8.30 Preventing brute force attacks against stack canary protection on networking servers](doc/8.30_prevent_brute_force_canary.md)
 * [九、附录](doc/9_appendix.md)
   * [9.1 更多 Linux 工具](doc/9.1_Linuxtools.md)
   * [9.2 更多 Windows 工具](doc/9.2_wintools.md)

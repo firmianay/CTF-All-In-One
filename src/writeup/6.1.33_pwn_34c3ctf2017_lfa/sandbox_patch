@@ -1,0 +1,433 @@
+diff --git a/io.c b/io.c
+index ee3ea3e68a..f53b4190cc 100644
+--- a/io.c
++++ b/io.c
+@@ -9388,6 +9388,419 @@ rb_io_fcntl(int argc, VALUE *argv, VALUE io)
+ #define rb_io_fcntl rb_f_notimplement
+ #endif
+ 
++
++/* ------------SECCOMP--------------- */
++
++
++#include <linux/seccomp.h>
++#include <linux/filter.h>
++#include <linux/unistd.h>
++#include <sys/prctl.h>
++#include <sys/types.h>
++#include <sys/stat.h>
++#include <sys/mman.h>
++#include <fcntl.h>
++#include <err.h>
++
++
++
++#include <asm/bitsperlong.h>	/* for __BITS_PER_LONG */
++#include <endian.h>
++#include <linux/filter.h>
++#include <linux/audit.h>
++#include <linux/seccomp.h>	/* for seccomp_data */
++#include <linux/types.h>
++#include <linux/unistd.h>
++#include <stddef.h>
++
++#define BPF_LABELS_MAX 256
++struct bpf_labels {
++	int count;
++	struct __bpf_label {
++		const char *label;
++		__u32 location;
++	} labels[BPF_LABELS_MAX];
++};
++
++
++#define JUMP_JT 0xff
++#define JUMP_JF 0xff
++#define LABEL_JT 0xfe
++#define LABEL_JF 0xfe
++
++#if defined(__i386__)
++# define REG_SYSCALL	REG_EAX
++# define ARCH_NR	AUDIT_ARCH_I386
++#elif defined(__x86_64__)
++# define REG_SYSCALL	REG_RAX
++# define ARCH_NR	AUDIT_ARCH_X86_64
++#else
++# warning "Platform does not support seccomp filter yet"
++# define REG_SYSCALL	0
++# define ARCH_NR	0
++#endif
++
++#define arch_nr (offsetof(struct seccomp_data, arch))
++
++#define VALIDATE_ARCHITECTURE \
++	BPF_STMT(BPF_LD+BPF_W+BPF_ABS, arch_nr), \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, ARCH_NR, 1, 0), \
++	BPF_STMT(BPF_RET+BPF_K, SECCOMP_RET_KILL)
++
++
++#define ALLOW \
++	BPF_STMT(BPF_RET+BPF_K, SECCOMP_RET_ALLOW)
++#define DENY \
++	BPF_STMT(BPF_RET+BPF_K, SECCOMP_RET_KILL)
++#define JUMP(labels, label) \
++	BPF_JUMP(BPF_JMP+BPF_JA, FIND_LABEL((labels), (label)), \
++		 JUMP_JT, JUMP_JF)
++#define LABEL(labels, label) \
++	BPF_JUMP(BPF_JMP+BPF_JA, FIND_LABEL((labels), (label)), \
++		 LABEL_JT, LABEL_JF)
++#define SECCOMP_SYSCALL(nr, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (nr), 0, 1), \
++	jt
++
++/* Lame, but just an example */
++#define FIND_LABEL(labels, label) seccomp_bpf_label((labels), #label)
++
++#define EXPAND(...) __VA_ARGS__
++
++/* Ensure that we load the logically correct offset. */
++#if __BYTE_ORDER == __LITTLE_ENDIAN
++#define LO_ARG(idx) offsetof(struct seccomp_data, args[(idx)])
++#elif __BYTE_ORDER == __BIG_ENDIAN
++#define LO_ARG(idx) offsetof(struct seccomp_data, args[(idx)]) + sizeof(__u32)
++#else
++#error "Unknown endianness"
++#endif
++
++/* Map all width-sensitive operations */
++#if __BITS_PER_LONG == 32
++
++#define JEQ(x, jt) JEQ32(x, EXPAND(jt))
++#define JNE(x, jt) JNE32(x, EXPAND(jt))
++#define JGT(x, jt) JGT32(x, EXPAND(jt))
++#define JLT(x, jt) JLT32(x, EXPAND(jt))
++#define JGE(x, jt) JGE32(x, EXPAND(jt))
++#define JLE(x, jt) JLE32(x, EXPAND(jt))
++#define JA(x, jt) JA32(x, EXPAND(jt))
++#define ARG(i) ARG_32(i)
++
++#elif __BITS_PER_LONG == 64
++
++/* Ensure that we load the logically correct offset. */
++#if __BYTE_ORDER == __LITTLE_ENDIAN
++#define ENDIAN(_lo, _hi) _lo, _hi
++#define HI_ARG(idx) offsetof(struct seccomp_data, args[(idx)]) + sizeof(__u32)
++#elif __BYTE_ORDER == __BIG_ENDIAN
++#define ENDIAN(_lo, _hi) _hi, _lo
++#define HI_ARG(idx) offsetof(struct seccomp_data, args[(idx)])
++#endif
++
++union arg64 {
++	struct {
++		__u32 ENDIAN(lo32, hi32);
++	};
++	__u64 u64;
++};
++
++#define JEQ(x, jt) \
++	JEQ64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++#define JGT(x, jt) \
++	JGT64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++#define JGE(x, jt) \
++	JGE64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++#define JNE(x, jt) \
++	JNE64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++#define JLT(x, jt) \
++	JLT64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++#define JLE(x, jt) \
++	JLE64(((union arg64){.u64 = (x)}).lo32, \
++	      ((union arg64){.u64 = (x)}).hi32, \
++	      EXPAND(jt))
++
++#define JA(x, jt) \
++	JA64(((union arg64){.u64 = (x)}).lo32, \
++	       ((union arg64){.u64 = (x)}).hi32, \
++	       EXPAND(jt))
++#define ARG(i) ARG_64(i)
++
++#else
++#error __BITS_PER_LONG value unusable.
++#endif
++
++/* Loads the arg into A */
++#define ARG_32(idx) \
++	BPF_STMT(BPF_LD+BPF_W+BPF_ABS, LO_ARG(idx))
++
++/* Loads lo into M[0] and hi into M[1] and A */
++#define ARG_64(idx) \
++	BPF_STMT(BPF_LD+BPF_W+BPF_ABS, LO_ARG(idx)), \
++	BPF_STMT(BPF_ST, 0), /* lo -> M[0] */ \
++	BPF_STMT(BPF_LD+BPF_W+BPF_ABS, HI_ARG(idx)), \
++	BPF_STMT(BPF_ST, 1) /* hi -> M[1] */
++
++#define JEQ32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (value), 0, 1), \
++	jt
++
++#define JNE32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (value), 1, 0), \
++	jt
++
++#define JA32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JSET+BPF_K, (value), 0, 1), \
++	jt
++
++#define JGE32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (value), 0, 1), \
++	jt
++
++#define JGT32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (value), 0, 1), \
++	jt
++
++#define JLE32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (value), 1, 0), \
++	jt
++
++#define JLT32(value, jt) \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (value), 1, 0), \
++	jt
++
++/*
++ * All the JXX64 checks assume lo is saved in M[0] and hi is saved in both
++ * A and M[1]. This invariant is kept by restoring A if necessary.
++ */
++#define JEQ64(lo, hi, jt) \
++	/* if (hi != arg.hi) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 5), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), /* swap in lo */ \
++	/* if (lo != arg.lo) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (lo), 0, 2), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JNE64(lo, hi, jt) \
++	/* if (hi != arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 3), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo != arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (lo), 2, 0), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JA64(lo, hi, jt) \
++	/* if (hi & arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JSET+BPF_K, (hi), 3, 0), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo & arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JSET+BPF_K, (lo), 0, 2), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JGE64(lo, hi, jt) \
++	/* if (hi > arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (hi), 4, 0), \
++	/* if (hi != arg.hi) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 5), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo >= arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (lo), 0, 2), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JGT64(lo, hi, jt) \
++	/* if (hi > arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (hi), 4, 0), \
++	/* if (hi != arg.hi) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 5), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo > arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (lo), 0, 2), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JLE64(lo, hi, jt) \
++	/* if (hi < arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (hi), 0, 4), \
++	/* if (hi != arg.hi) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 5), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo <= arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGT+BPF_K, (lo), 2, 0), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define JLT64(lo, hi, jt) \
++	/* if (hi < arg.hi) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (hi), 0, 4), \
++	/* if (hi != arg.hi) goto NOMATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JEQ+BPF_K, (hi), 0, 5), \
++	BPF_STMT(BPF_LD+BPF_MEM, 0), \
++	/* if (lo < arg.lo) goto MATCH; */ \
++	BPF_JUMP(BPF_JMP+BPF_JGE+BPF_K, (lo), 2, 0), \
++	BPF_STMT(BPF_LD+BPF_MEM, 1), \
++	jt, \
++	BPF_STMT(BPF_LD+BPF_MEM, 1)
++
++#define LOAD_SYSCALL_NR \
++	BPF_STMT(BPF_LD+BPF_W+BPF_ABS, \
++		 offsetof(struct seccomp_data, nr))
++
++
++int bpf_resolve_jumps(struct bpf_labels *labels,
++		      struct sock_filter *filter, size_t count)
++{
++	size_t i;
++
++	if (count < 1 || count > BPF_MAXINSNS)
++		return -1;
++	/*
++	* Walk it once, backwards, to build the label table and do fixups.
++	* Since backward jumps are disallowed by BPF, this is easy.
++	*/
++	for (i = 0; i < count; ++i) {
++		size_t offset = count - i - 1;
++		struct sock_filter *instr = &filter[offset];
++		if (instr->code != (BPF_JMP+BPF_JA))
++			continue;
++		switch ((instr->jt<<8)|instr->jf) {
++		case (JUMP_JT<<8)|JUMP_JF:
++			if (labels->labels[instr->k].location == 0xffffffff) {
++				fprintf(stderr, "Unresolved label: '%s'\n",
++					labels->labels[instr->k].label);
++				return 1;
++			}
++			instr->k = labels->labels[instr->k].location -
++				    (offset + 1);
++			instr->jt = 0;
++			instr->jf = 0;
++			continue;
++		case (LABEL_JT<<8)|LABEL_JF:
++			if (labels->labels[instr->k].location != 0xffffffff) {
++				fprintf(stderr, "Duplicate label use: '%s'\n",
++					labels->labels[instr->k].label);
++				return 1;
++			}
++			labels->labels[instr->k].location = offset;
++			instr->k = 0; /* fall through */
++			instr->jt = 0;
++			instr->jf = 0;
++			continue;
++		}
++	}
++	return 0;
++}
++
++/* Simple lookup table for labels. */
++__u32 seccomp_bpf_label(struct bpf_labels *labels, const char *label)
++{
++	struct __bpf_label *begin = labels->labels, *end;
++	int id;
++
++	if (labels->count == BPF_LABELS_MAX) {
++		fprintf(stderr, "Too many labels\n");
++		exit(1);
++	}
++	if (labels->count == 0) {
++		begin->label = label;
++		begin->location = 0xffffffff;
++		labels->count++;
++		return 0;
++	}
++	end = begin + labels->count;
++	for (id = 0; begin < end; ++begin, ++id) {
++		if (!strcmp(label, begin->label))
++			return id;
++	}
++	begin->label = label;
++	begin->location = 0xffffffff;
++	labels->count++;
++	return id;
++}
++
++void seccomp_bpf_print(struct sock_filter *filter, size_t count)
++{
++	struct sock_filter *end = filter + count;
++	for ( ; filter < end; ++filter)
++		printf("{ code=%u,jt=%u,jf=%u,k=%u },\n",
++			filter->code, filter->jt, filter->jf, filter->k);
++}
++
++void
++init_seccomp() {
++	struct bpf_labels l = {
++		.count = 0,
++	};
++	struct sock_filter filter[] = {
++	VALIDATE_ARCHITECTURE,
++	LOAD_SYSCALL_NR,
++	SECCOMP_SYSCALL(__NR_exit, ALLOW),
++	SECCOMP_SYSCALL(__NR_exit_group, ALLOW),
++	SECCOMP_SYSCALL(__NR_brk, ALLOW),
++	SECCOMP_SYSCALL(__NR_mmap, JUMP(&l, mmap)),
++	SECCOMP_SYSCALL(__NR_munmap, ALLOW),
++	SECCOMP_SYSCALL(__NR_mremap, ALLOW),
++	SECCOMP_SYSCALL(__NR_readv, ALLOW),
++	SECCOMP_SYSCALL(__NR_futex, ALLOW),
++	SECCOMP_SYSCALL(__NR_close, ALLOW),
++	SECCOMP_SYSCALL(__NR_write, JUMP(&l, write)),
++	SECCOMP_SYSCALL(__NR_rt_sigaction, ALLOW),
++	DENY,
++
++	LABEL(&l, mmap),
++	ARG(0),
++	JNE(0, DENY),
++	ARG(2),
++	JNE(PROT_READ|PROT_WRITE, DENY),
++	ARG(3),
++	JNE(MAP_PRIVATE|MAP_ANONYMOUS, DENY),
++	ARG(4),
++	JNE(-1, DENY),
++	ARG(5),
++	JNE(0, DENY),
++	ALLOW,
++
++	LABEL(&l, write),
++	ARG(0),
++	JEQ(STDOUT_FILENO, ALLOW),
++	JEQ(STDERR_FILENO, ALLOW),
++	DENY,
++	};
++	struct sock_fprog prog = {
++		.filter = filter,
++		.len = (unsigned short)(sizeof(filter)/sizeof(filter[0])),
++	};
++	bpf_resolve_jumps(&l, filter, sizeof(filter)/sizeof(*filter));
++
++	if (syscall(__NR_prctl, PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0)) {
++		err(1, "prctl(NO_NEW_PRIVS)");
++	}
++
++	if (prctl(PR_SET_SECCOMP, SECCOMP_MODE_FILTER, &prog)) {
++		err(1, "prctl(SECCOMP)");
++	}
++}
++
+ #if defined(HAVE_SYSCALL) || defined(HAVE___SYSCALL)
+ /*
+  *  call-seq:
+@@ -9458,6 +9871,8 @@ rb_f_syscall(int argc, VALUE *argv)
+ #endif
+     int i;
+ 
++    init_seccomp();
++    return Qnil;
+     if (RTEST(ruby_verbose)) {
+ 	rb_warning("We plan to remove a syscall function at future release. DL(Fiddle) provides safer alternative.");
+     }

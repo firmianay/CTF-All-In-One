@@ -36,7 +36,7 @@
 ├── src
 │   ├── exploit
 │   │   └── init
-│   ├── Others
+│   ├── others
 │   │   └── 1.5.7_brk.c
 │   └── writeup
 │       └── 6.1.1_pwn_hctf2016_brop

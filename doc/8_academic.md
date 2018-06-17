@@ -30,7 +30,7 @@
 * [8.25 (State of) The Art of War: Offensive Techniques in Binary Analysis](8.25_angr.md)
 * [8.26 Driller: Augmenting Fuzzing Through Selective Symbolic Execution](8.26_driller.md)
 * [8.27 Firmalice - Automatic Detection of Authentication Bypass Vulnerabilities in Binary Firmware](8.27_firmalice.md)
-* [8.28 Cross-Architecture Bug Search in Binary Executables](8.28_cross_arch_bug_search.md)
+* [8.28 Cross-Architecture Bug Search in Binary Executables](8.28_cross_arch_bug.md)
 * [8.29 Dynamic Hooks: Hiding Control Flow Changes within Non-Control Data](8.29_dynamic_hooks.md)
 * [8.30 Preventing brute force attacks against stack canary protection on networking servers](8.30_prevent_brute_force_canary.md)
 * [8.31 WYSINWYX What You See Is Not What You eXecute](8.31_wysinwyx.md)
@@ -46,3 +46,4 @@
 * [8.41 IntPatch: Automatically Fix Integer-Overflow-to-Buffer-Overflow Vulnerability at Compile-Time](8.41_intpatch.md)
 * [8.42 Dynamic Taint Analysis for Automatic Detection, Analysis, and Signature Generation of Exploits on Commodity Software](8.42_taintcheck.md)
 * [8.43 DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation](8.43_dta++.md)
+* [8.44 Superset Disassembly: Statically Rewriting x86 Binaries Without Heuristics](8.44_multiverse.md)

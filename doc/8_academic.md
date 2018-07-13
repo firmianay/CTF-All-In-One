@@ -47,3 +47,6 @@
 * [8.42 Dynamic Taint Analysis for Automatic Detection, Analysis, and Signature Generation of Exploits on Commodity Software](8.42_taintcheck.md)
 * [8.43 DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation](8.43_dta++.md)
 * [8.44 Superset Disassembly: Statically Rewriting x86 Binaries Without Heuristics](8.44_multiverse.md)
+* [8.45 Ramblr: Making Reassembly Great Again](8.45_ramblr.md)
+* [8.46 FreeGuard: A Faster Secure Heap Allocator](8.46_freeguard.md)
+* [8.47 Jump-Oriented Programming: A New Class of Code-Reuse Attack](8.47_jop.md)

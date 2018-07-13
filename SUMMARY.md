@@ -100,7 +100,7 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [4.7 通用 gadget](doc/4.7_common_gadget.md)
   * [4.8 使用 DynELF 泄露函数地址](doc/4.8_dynelf.md)
   * [4.9 shellcode 开发](doc/4.9_shellcode.md)
-  * 4.10
+  * [4.10 跳转导向编程（JOP）](doc/4.10_jop.md)
   * 4.11
   * [4.12 利用 __stack_chk_fail](doc/4.12_stack_chk_fail.md)
   * [4.13 利用 _IO_FILE 结构](doc/4.13_io_file.md)
@@ -240,6 +240,9 @@ GitHub 地址：https://github.com/firmianay/CTF-All-In-One
   * [8.42 Dynamic Taint Analysis for Automatic Detection, Analysis, and Signature Generation of Exploits on Commodity Software](doc/8.42_taintcheck.md)
   * [8.43 DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation](doc/8.43_dta++.md)
   * [8.44 Superset Disassembly: Statically Rewriting x86 Binaries Without Heuristics](doc/8.44_multiverse.md)
+  * [8.45 Ramblr: Making Reassembly Great Again](doc/8.45_ramblr.md)
+  * [8.46 FreeGuard: A Faster Secure Heap Allocator](doc/8.46_freeguard.md)
+  * [8.47 Jump-Oriented Programming: A New Class of Code-Reuse Attack](doc/8.47_jop.md)
 * [九、附录](doc/9_appendix.md)
   * [9.1 更多 Linux 工具](doc/9.1_Linuxtools.md)
   * [9.2 更多 Windows 工具](doc/9.2_wintools.md)

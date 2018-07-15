@@ -16,23 +16,23 @@ PDF/Mobi/ePub 文件下载地址：
 
 目录
 ---
-请查看 [SUMMARY.md](SUMMARY.md)
+请查看 [SUMMARY.md](https://github.com/firmianay/CTF-All-In-One/blob/master/SUMMARY.md)
 
 合作和贡献
 ---
-请查看 [CONTRIBUTION.md](CONTRIBUTION.md)
+请查看 [CONTRIBUTION.md](https://github.com/firmianay/CTF-All-In-One/blob/master/CONTRIBUTION.md)
 
 常见问题
 ---
-请查看 [FAQ.md](FAQ.md)
+请查看 [FAQ.md](https://github.com/firmianay/CTF-All-In-One/blob/master/FAQ.md)
 
 修改记录
 ---
-请查看 [CHANGELOG](CHANGELOG)
+请查看 [CHANGELOG](https://github.com/firmianay/CTF-All-In-One/blob/master/CHANGELOG)
 
 致谢
 ---
-请查看 [THANKS](THANKS)
+请查看 [THANKS](https://github.com/firmianay/CTF-All-In-One/blob/master/THANKS)
 
 LICENSE
 ---

@@ -50,3 +50,5 @@
 * [8.45 Ramblr: Making Reassembly Great Again](8.45_ramblr.md)
 * [8.46 FreeGuard: A Faster Secure Heap Allocator](8.46_freeguard.md)
 * [8.47 Jump-Oriented Programming: A New Class of Code-Reuse Attack](8.47_jop.md)
+* [8.48 Reassembleable Disassembling](8.48_uroboros.md)
+* [8.49 Understanding Integer Overflow in C/C++](8.49_ioc.md)

@@ -1,7 +1,6 @@
 # Summary
 
-GitHub 地址：https://github.com/firmianay/CTF-All-In-One
-
+GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
 
 * [简介](README.md)
 * [前言](doc/0_preface.md)

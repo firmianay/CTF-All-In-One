@@ -34,7 +34,8 @@
   * [6.1.31 pwn HITBCTF2018 mutepig](6.1.31_pwn_hitbctf2018_mutepig.md)
   * [6.1.32 pwn SECCONCTF2017 vm_no_fun](6.1.32_pwn_secconctf2017_vm_no_fun.md)
   * [6.1.33 pwn 34C3CTF2017 LFA](6.1.33_pwn_34c3ctf2017_lfa.md)
-  * [6.2.34 pwn N1CTF2018 memsafety](6.1.34_pwn_n1ctf2018_memsafety.md)
+  * [6.1.34 pwn N1CTF2018 memsafety](6.1.34_pwn_n1ctf2018_memsafety.md)
+  * [6.1.35 pwn 0CTF2018 heapstorm2](doc/6.1.35_pwn_0ctf2018_heapstorm2.md)
 * Reverse
   * [6.2.1 re XHPCTF2017 dont_panic](6.2.1_re_xhpctf2017_dont_panic.md)
   * [6.2.2 re ECTF2016 tayy](6.2.2_re_ectf2016_tayy.md)

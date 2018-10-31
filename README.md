@@ -10,6 +10,8 @@
 
 ![](https://github.com/firmianay/CTF-All-In-One/blob/master/myWechat.jpg)
 
+加微信请标注“来自github”，谢谢。
+
 ---
 
 [![Build Status](https://travis-ci.org/firmianay/CTF-All-In-One.svg?branch=master)](https://travis-ci.org/firmianay/CTF-All-In-One)

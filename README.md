@@ -55,9 +55,7 @@ CC BY-SA 4.0
 
 打赏二维码如下，金额随意，所得捐款将用于给 Contributors 购买书籍和西瓜，~~可直播~~。
 
-![](https://github.com/firmianay/CTF-All-In-One/blob/master/myWechat.jpg)
-![](https://github.com/firmianay/CTF-All-In-One/blob/master/myAlipay.jpg)
-
-另外加微信请标注“来自github”，谢谢。
+支付宝：![](myAlipay.jpg)![](https://github.com/firmianay/CTF-All-In-One/blob/master/myAlipay.jpg)
+微信(加好友请标注“github”)：![](myWechat.jpg)![](https://github.com/firmianay/CTF-All-In-One/blob/master/myWechat.jpg)
 
 - 2018-12-04 微信 长点心吧* 10

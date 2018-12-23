@@ -6,7 +6,7 @@
 
 目录：[目录](catalog.pdf)
 
-样章：[样章](demo1-pwn.pdf)
+样章：[样章1](demo1-pwn.pdf) [样章2](demo2-angr.pdf)
 
 ---
 

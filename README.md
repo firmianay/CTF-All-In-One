@@ -58,6 +58,7 @@ CC BY-SA 4.0
 支付宝：![](https://github.com/firmianay/CTF-All-In-One/blob/master/myAlipay.jpg)
 微信(加好友请标注“github”)：![](https://github.com/firmianay/CTF-All-In-One/blob/master/myWechat.jpg)
 
-- 2018-12-04 微信 长点心吧 ¥10
-- 2018-12-17 微信 tjw ¥10
-- 2019-01-27 微信 Yimin Zhang ¥99
+- 2018-12-04 长点心吧 ¥10
+- 2018-12-17 tjw ¥10
+- 2019-01-27 Yimin Zhang ¥99
+- 2019-02-25 *孟达 ¥100

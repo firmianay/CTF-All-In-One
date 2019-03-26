@@ -55,6 +55,7 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
     * [2.2.3 JEB](doc/2.2.3_jeb.md)
     * [2.2.4 Capstone](doc/2.2.4_capstone.md)
     * [2.2.5 Keystone](doc/2.2.5_keystone.md)
+    * [2.2.6 Ghidra](doc/2.2.6_ghidra.md)
   * 动态分析工具
     * [2.3.1 GDB](doc/2.3.1_gdb.md)
     * [2.3.2 OllyDbg](doc/2.3.2_ollydbg.md)

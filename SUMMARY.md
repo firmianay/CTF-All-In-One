@@ -254,6 +254,7 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
   * [8.47 Jump-Oriented Programming: A New Class of Code-Reuse Attack](doc/8.47_jop.md)
   * [8.48 Reassembleable Disassembling](doc/8.48_uroboros.md)
   * [8.49 Understanding Integer Overflow in C/C++](doc/8.49_ioc.md)
+  * [8.50 A Large-Scale Analysis of the Security of Embedded Firmwares](doc/8.50_large_scale_embedded.md)
 * [九、附录](doc/9_appendix.md)
   * [9.1 更多 Linux 工具](doc/9.1_Linuxtools.md)
   * [9.2 更多 Windows 工具](doc/9.2_wintools.md)

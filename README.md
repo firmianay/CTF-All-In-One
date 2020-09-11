@@ -16,11 +16,11 @@
 
 GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
 
-GitBook 地址：<https://www.gitbook.com/book/firmianay/ctf-all-in-one/details>
+GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
 PDF/Mobi/ePub 文件下载地址：
 
-- （推荐）<https://www.gitbook.com/download/pdf/book/firmianay/ctf-all-in-one>
+- （推荐）<https://firmianay.gitbook.io/ctf-all-in-one/>
 - （不推荐）<https://github.com/firmianay/CTF-All-In-One/releases>
 
 ## 目录
@@ -70,3 +70,4 @@ CC BY-SA 4.0
 - 2020-04-05 jingle ¥200
 - 2020-05-19 新写的旧歌 ¥5.2
 - 2020-08-26 *绍林 ¥50
+- 2020-09-11 d0ub1e2 ¥66

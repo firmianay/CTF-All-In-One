@@ -2,7 +2,7 @@
 
 ## 号外号外！
 
-感谢电子工业出版社没有放弃我这只鸽子，书的初稿已经交上去了，最新的目录如下（样章还是老的..），敬请期待！
+感谢电子工业出版社没有放弃我这只鸽子，本书已在排版，最新的目录如下（样章还是老的..），敬请期待！
 
 目录：[目录](catalog.pdf)
 
@@ -18,9 +18,8 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
 
 GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
-PDF/Mobi/ePub 文件下载地址：
+由于 GitBook 把 pdf 导出设置为会员服务了...所以这应该是虽不推荐但唯一的版本了，还是直接在 GitHub 看吧：
 
-- （推荐）<https://firmianay.gitbook.io/ctf-all-in-one/>
 - （不推荐）<https://github.com/firmianay/CTF-All-In-One/releases>
 
 ## 目录

@@ -2,15 +2,11 @@
 
 ## 号外号外！
 
-感谢电子工业出版社博文观点的鼓励，我们有意将该项目成书出版，初定的目录和样章如下所示，欢迎大家提意见～
+感谢电子工业出版社没有放弃我这只鸽子，本书已在排版，最新的目录如下（样章还是老的..），敬请期待！
 
 目录：[目录](catalog.pdf)
 
 样章：[样章1](demo1-pwn.pdf) [样章2](demo2-angr.pdf)
-
-下方为西电信安协会(XDSEC)及L-team官方公众号，专注于技术分享与进步。本书后续的随书材料等也会放到该公众号上，欢迎大家关注～
-
-![](https://github.com/firmianay/CTF-All-In-One/blob/master/xdsec.png)
 
 ---
 
@@ -20,11 +16,10 @@
 
 GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
 
-GitBook 地址：<https://www.gitbook.com/book/firmianay/ctf-all-in-one/details>
+GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
-PDF/Mobi/ePub 文件下载地址：
+由于 GitBook 把 pdf 导出设置为会员服务了...所以这应该是虽不推荐但唯一的版本了，还是直接在 GitHub 看吧：
 
-- （推荐）<https://www.gitbook.com/download/pdf/book/firmianay/ctf-all-in-one>
 - （不推荐）<https://github.com/firmianay/CTF-All-In-One/releases>
 
 ## 目录
@@ -55,8 +50,6 @@ CC BY-SA 4.0
 
 本项目接受捐赠，形式不限，如：送书，寄明信片，打赏，~~介绍女朋友~~……
 
-邮寄地址：`陕西省西安市西安电子科技大学南校区`，收件人：`杨超`。
-
 打赏二维码如下，金额随意，所得捐款将用于给 Contributors 购买书籍和西瓜，~~可直播~~。
 
 支付宝：![](https://github.com/firmianay/CTF-All-In-One/blob/master/myAlipay.jpg)
@@ -75,3 +68,5 @@ CC BY-SA 4.0
 - 2019-10-12 简单 ¥40.96
 - 2020-04-05 jingle ¥200
 - 2020-05-19 新写的旧歌 ¥5.2
+- 2020-08-26 *绍林 ¥50
+- 2020-09-11 d0ub1e2 ¥66

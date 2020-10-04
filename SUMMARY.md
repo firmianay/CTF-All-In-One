@@ -109,7 +109,7 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
   * [4.8 使用 DynELF 泄露函数地址](doc/4.8_dynelf.md)
   * [4.9 shellcode 开发](doc/4.9_shellcode.md)
   * [4.10 跳转导向编程（JOP）](doc/4.10_jop.md)
-  * 4.11
+  * [4.11 利用 mprotect 修改栈权限](doc/4.11_mprotect.md)
   * [4.12 利用 __stack_chk_fail](doc/4.12_stack_chk_fail.md)
   * [4.13 利用 _IO_FILE 结构](doc/4.13_io_file.md)
   * [4.14 glibc tcache 机制](doc/4.14_glibc_tcache.md)

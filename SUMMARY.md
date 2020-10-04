@@ -97,6 +97,7 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
     * [3.3.2 XSS 漏洞利用](doc/3.3.2_xss.md)
   * Crypto
   * Misc
+    * [3.5.1 Lsb](doc/3.5.1_Lsb.md)
   * Mobile
 * [四、技巧篇](doc/4_tips.md)
   * [4.1 Linux 内核调试](doc/4.1_linux_kernel_debug.md)

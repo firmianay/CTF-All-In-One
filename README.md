@@ -40,7 +40,7 @@ GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
 ## 致谢
 
-请查看 [THANKS](https://github.com/firmianay/CTF-All-In-One/blob/master/THANKS)
+请查看 [THANKS](./THANKS.md)
 
 ## LICENSE
 

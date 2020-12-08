@@ -24,6 +24,8 @@
 
 相关资源（源码、勘误等）：[相关资源](https://github.com/firmianay/ctf-book)
 
+读者交流QQ群：808542982
+
 ---
 
 [![Build Status](https://travis-ci.org/firmianay/CTF-All-In-One.svg?branch=master)](https://travis-ci.org/firmianay/CTF-All-In-One)

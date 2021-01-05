@@ -36,17 +36,11 @@
 
 ---
 
-[![Build Status](https://travis-ci.org/firmianay/CTF-All-In-One.svg?branch=master)](https://travis-ci.org/firmianay/CTF-All-In-One)
-
 *——“与其相信谣言，不如一直学习。”*
 
 GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
 
 GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
-
-由于 GitBook 把 pdf 导出设置为会员服务了，所以这应该是虽不推荐但唯一的版本了，还是直接在 GitHub 看吧：
-
-- （不推荐 2018-07-15）<https://github.com/firmianay/CTF-All-In-One/releases>
 
 ## 目录
 

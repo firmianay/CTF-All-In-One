@@ -56,7 +56,7 @@ GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
 ## 合作和贡献
 
-请查看 [CONTRIBUTION.md](https://github.com/firmianay/CTF-All-In-One/blob/master/CONTRIBUTION.md)
+请查看 [CONTRIBUTING.md](https://github.com/firmianay/CTF-All-In-One/blob/master/CONTRIBUTING.md)
 
 ## 修改记录
 
@@ -78,8 +78,8 @@ CC BY-SA 4.0
 
 打赏二维码如下，金额随意，所得捐款将用于给 Contributors 购买书籍和西瓜，~~可直播~~。
 
-支付宝：![](https://github.com/firmianay/CTF-All-In-One/blob/master/myAlipay.jpg)
-微信(加好友请标注“github”)：![](https://github.com/firmianay/CTF-All-In-One/blob/master/myWechat.jpg)
+支付宝：![](./myAlipay.jpg)
+微信(加好友请标注“github”)：![](./myWechat.jpg)
 
 - 2018-12-04 长点心吧 ¥10
 - 2018-12-17 tjw ¥10
@@ -106,3 +106,5 @@ CC BY-SA 4.0
 - 2021-03-02 cuckoo ¥16
 - 2021-03-03 A ¥66
 - 2021-03-05 轩辕御龙 ¥50
+- 2021-04-01 Au_J ¥1.11
+- 2021-07-09 **瀚 ¥100

@@ -254,4 +254,5 @@ GitHub 地址：<https://github.com/firmianay/CTF-All-In-One>
   * [9.2 更多 Windows 工具](doc/9.2_wintools.md)
   * [9.3 更多资源](doc/9.3_books_blogs.md)
   * [9.4 Linux 系统调用表](doc/9.4_linux_syscall.md)
-  * [9.5 幻灯片](doc/9.5_slides.md)
+  * [9.5 python2到3字符串转换](doc/9.5_hexstrbyte.md)
+  * [9.6 幻灯片](doc/9.6_slides.md)

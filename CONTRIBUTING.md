@@ -25,7 +25,7 @@
 ├── build
 │   └── ctf_all_in_one.pdf
 ├── CHANGELOG
-├── CONTRIBUTION.md
+├── CONTRIBUTING.md
 ├── doc
 │   └── 1.1_ctf.md
 ├── FAQ.md
@@ -51,7 +51,7 @@
 - `LICENSE`：开源协议。
 - `README.md`：自述文件。
 - `CHANGELOG`：变更日志。
-- `CONTRIBUTION.md`：合作与贡献的相关内容。
+- `CONTRIBUTING.md`：合作与贡献的相关内容。
 - `SUMMARY.md`：GitBook 目录结构。
 - `.gitignore`：忽略特殊文件。
 - `FAQ.md`：常见问题解答。

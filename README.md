@@ -22,11 +22,15 @@
 
 读者交流QQ群：808542982
 
-![img](./book/qqgroup.png)
+<div align="left">
+    <img src="./book/qqgroup.png" alt="qq" width="100">
+</div>
 
 知识星球作为增值服务，加我微信发一张书的照片可以免费加入：
 
-![img](./book/zsxq.png)
+<div align="left">
+    <img src="./book/zsxq.png" alt="zsxq" width="300">
+</div>
 
 **图书编写耗时费力，倾注了作者大量的心力，打击盗版，维护正版！**
 

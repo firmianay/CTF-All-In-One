@@ -117,3 +117,7 @@ CC BY-SA 4.0
 - 2021-04-01 Au_J ¥1.11
 - 2021-07-09 **瀚 ¥100
 - 2021-09-04 金刻师 ¥99.99
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/firmianay/CTF-All-In-One.svg)](https://starchart.cc/firmianay/CTF-All-In-One)

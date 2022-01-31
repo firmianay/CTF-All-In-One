@@ -20,11 +20,12 @@
 
 [关于本书](./book/pwn/README.md) | [目录](./book/pwn/catalog.pdf) | [样章](./book/pwn/demo.pdf) | [相关资源（源码、勘误等）](https://github.com/firmianay/ctf-book)
 
-读者交流QQ群：808542982
+读者交流QQ群：808542982、217863340
 
-<div align="left">
-    <img src="./book/qqgroup.png" alt="qq" width="100">
-</div>
+<table><tr>
+<td><img src=./book/qqgroup.jpg width="100"></td>
+<td><img src=./book/qqgroup2.jpg width="100"></td>
+</tr></table>
 
 知识星球作为增值服务，加我微信发一张书的照片可以免费加入：
 
@@ -82,12 +83,12 @@ CC BY-SA 4.0
 
 ## 捐赠
 
-本项目接受捐赠，形式不限，如：送书，寄明信片，打赏，~~介绍女朋友~~……
+本项目接受捐赠，形式不限，如：送书，寄明信片，打赏等。微信加好友请备注“github”。
 
-打赏二维码如下，金额随意，所得捐款将用于给 Contributors 购买书籍和西瓜，~~可直播~~。
-
-支付宝：![img](./myAlipay.jpg)
-微信(请备注“github”)：![img](./myWechat.jpg)
+<table><tr>
+<td><img src=./alipay.jpg width="100"></td>
+<td><img src=./wechat.png width="100"></td>
+</tr></table>
 
 - 2018-12-04 长点心吧 ¥10
 - 2018-12-17 tjw ¥10

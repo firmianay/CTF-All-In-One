@@ -22,16 +22,12 @@
 
 读者交流QQ群：808542982、217863340
 
+微信群请加我微信，备注“加群”。欢迎关注公众号：
+
 <table><tr>
-<td><img src=./book/qqgroup.jpg width="100"></td>
-<td><img src=./book/qqgroup2.jpg width="100"></td>
+<td><img src=./gzh.jpg width="100"></td>
+<td><img src=./wechat.jpg width="100"></td>
 </tr></table>
-
-知识星球作为增值服务，加我微信发一张书的照片可以免费加入：
-
-<div align="left">
-    <img src="./book/zsxq.png" alt="zsxq" width="300">
-</div>
 
 **图书编写耗时费力，倾注了作者大量的心力，打击盗版，维护正版！**
 
@@ -71,23 +67,10 @@ GitBook 地址：<https://firmianay.gitbook.io/ctf-all-in-one/>
 
 请查看 [CHANGELOG](https://github.com/firmianay/CTF-All-In-One/blob/master/CHANGELOG)
 
-## 致谢
-
-- 感谢内容贡献者及我室友：skyel1u
-- 感谢 XDSEC，把我引上了安全这条路，认识了很多志同道合的小伙伴
-- 感谢 GitHub 上的朋友，是你们的 star 给我写作的动力
-
-## LICENSE
-
-CC BY-SA 4.0
-
 ## 捐赠
-
-本项目接受捐赠，形式不限，如：送书，寄明信片，打赏等。微信加好友请备注“github”。
 
 <table><tr>
 <td><img src=./alipay.jpg width="100"></td>
-<td><img src=./wechat.png width="100"></td>
 </tr></table>
 
 - 2018-12-04 长点心吧 ¥10
@@ -118,7 +101,10 @@ CC BY-SA 4.0
 - 2021-04-01 Au_J ¥1.11
 - 2021-07-09 **瀚 ¥100
 - 2021-09-04 金刻师 ¥99.99
+- 2022-06-02 赵家小q ￥6.6
 
-## Stargazers over time
+## LICENSE
+
+CC-BY-SA-4.0
 
 [![Stargazers over time](https://starchart.cc/firmianay/CTF-All-In-One.svg)](https://starchart.cc/firmianay/CTF-All-In-One)
